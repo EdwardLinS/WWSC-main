@@ -1,0 +1,36 @@
+.rotating-scrollbar {
+    background-color: #40404057;
+
+    border-radius: 0.25;
+
+    height: 100%;
+    width: 1vw;
+    right:0;
+
+    z-index: 9998;
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.scroll-indicator {
+    width: 1.1vw;
+    height: 1.1vw;
+    transition: transform 0.2s;
+    object-fit: cover;
+}
+
+.scroll-indicator-bar {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    /* Adjust alignment as needed */
+    pointer-events: none;
+    /* Allow content beneath to be interacted with */
+    z-index: 9999;
+    background-color: transparent;
+    /* Make the background transparent */
+}

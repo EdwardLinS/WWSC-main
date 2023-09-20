@@ -1,0 +1,27 @@
+.text-drop {
+    border: rgb(200, 200, 200) solid;
+    border-radius: 0.5vw;
+
+    margin-top: 0vw;
+}
+
+.text-drop button {
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 0.5vw;
+}
+
+.text-drop p {
+    padding-left: 2vw;
+    padding-right: 1.5vw;
+    font-size: 0.9vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-drop p img {
+    width: 25vw;
+}

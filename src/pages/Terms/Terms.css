@@ -1,0 +1,40 @@
+.terms li::marker {
+    font-size: 1.5rem;
+}
+
+.terms ol {
+    padding-left: 4rem;
+}
+
+.terms h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.terms h2 {
+    color: black;
+
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+
+.terms h3 {
+    font-size: 2rem;
+    font-weight: bold;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.terms > p, .terms li {
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.address {
+    line-height: 2rem;
+    font-size: 1.5rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

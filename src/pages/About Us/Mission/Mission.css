@@ -1,0 +1,60 @@
+/** @format */
+
+.mission-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 75%;
+
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.mission-text > div {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.mission-text img {
+    width: 120px;
+}
+
+.mission-text div h1 {
+    color: #d45b39;
+
+    margin-top: 20px;
+    margin-bottom: 1vw;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.mission-text div p {
+    color: #085422;
+
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    
+}
+
+.bread {
+    font-size: 0.8rem;
+    margin: 1.25vw;
+
+    color: rgb(161, 161, 161);
+}
+
+.signature {
+    color: #085422;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    text-align: right;
+
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
+}

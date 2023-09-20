@@ -1,0 +1,74 @@
+.referee-card {
+    width: 35vw;
+    height: 41.5vw;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    border: black solid 0.75px;
+    box-shadow: none !important;
+}
+
+.referee-card p {
+    text-align: center;
+}
+
+.referee-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 3vw;
+    height: 50%;
+}
+
+.referee-row1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    margin-top: 1rem;
+
+    margin-left: 1vw;
+    text-align: left;
+}
+
+.referee-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.id-content p {
+    border: rgba(0, 0, 0, 0.165) solid;
+    border-radius: 0.5vw;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 0.25vw
+}
+
+.grade p, .id-content p, .id-content h3 {
+    text-align: left;
+
+    font-size: 1.5vw;
+    line-height: 4rem;
+}
+
+.grade h1 {
+    border: black solid;
+    border-radius: 50%;
+
+    width: 8vw;
+    height: 8vw;
+
+    text-align: center;
+    vertical-align: center;
+
+    color: white;
+    font-weight: bold;
+    font-size: 6.5vw;
+
+    margin-left: 20%;
+
+}

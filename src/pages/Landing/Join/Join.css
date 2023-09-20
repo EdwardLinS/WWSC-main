@@ -1,0 +1,54 @@
+.join {
+    padding-top: 2vw;
+    padding-bottom: 6vw;
+
+    background-color: #191919;
+}
+
+.join-head {
+    color: white;
+}
+
+#join-pic {
+    object-fit: cover;
+    width: 55vw;
+    height: 35vw;
+
+    position: relative;
+
+    padding: 0.5vw;
+    border: rgb(54, 54, 54) solid;
+    border-radius: 0.25vw;
+}
+
+.join-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.join-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.join-caption > i p {
+    font-family: Poppins;
+    font-size: 1.5vw;
+    color: white;
+
+    line-height: 1vw;
+}
+
+.join-caption > i {
+    margin-bottom: 3vw;
+}
+
+.contact-us {
+    margin-top: 3vw;
+}

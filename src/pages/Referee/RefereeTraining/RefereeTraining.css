@@ -1,0 +1,66 @@
+.train-container {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+.train-content h2 {
+    font-size: 2.5rem;
+}
+
+.train-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    width: 75%;
+
+    font-family: Poppins;
+}
+
+.train-input {
+    font-size: 1.75rem;
+
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+.location-input span {
+    font-size: 1.75rem;
+    text-align: left;
+}
+
+.location-input label {
+    font-size: 1.25rem;
+}
+
+.train-content label input, .train-content label select {
+    width: 50%;
+}
+
+.train-content label select {
+    text-align: center;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 15%;
+}
+
+.form-button button{
+    font-size:2rem;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    margin-left: 0;
+    margin-right: 2.5vw;
+    width: 20rem;
+
+    border-width: 0.1rem;
+}

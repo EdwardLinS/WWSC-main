@@ -1,0 +1,59 @@
+/** @format */
+
+.intro-heading-pic {
+    width: 100%;
+
+    background: #f0f0f0;
+}
+
+.intro-heading-pic img {
+    width: 78.7%;
+    margin-top: 2vw;
+
+    border-radius: 0.5vw 0.5vw 0vw 0vw;
+    /* margin-bottom: 1vw; */
+}
+
+.intro-container {
+    padding-top: 0;
+}
+
+.intro-text {
+    padding-top: 1.5vw;
+
+    border-radius: 0vw 0vw 0.5vw 0.5vw;
+}
+
+.intro-text h1 {
+    color: #d45b39;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.intro-text p {
+    color: #085422;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    text-indent: 3rem;
+}
+
+.intro-text > div {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.intro-text .signature {
+    color: #085422;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    text-align: right;
+
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
+}

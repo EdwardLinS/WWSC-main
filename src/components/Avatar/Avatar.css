@@ -1,0 +1,16 @@
+.avatar {
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+
+    background-color: white;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+
+    border: black solid;
+    border-radius: 50%;
+
+    object-fit: cover;
+  }

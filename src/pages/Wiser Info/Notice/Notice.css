@@ -1,0 +1,106 @@
+.load {
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.by {
+    text-align: right;
+    color: gray;
+}
+
+.read-link {
+    font-size: 1.5rem;
+}
+
+.content {
+    margin-top: 1vw;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.notice {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: baseline;
+
+    gap: 3rem;
+
+    width: 100%;
+
+    padding-right: 15rem;
+}
+
+.notice-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.sidebar hr {
+    width: 30rem;
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sidebar li {
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+}
+
+.page-numbers {
+    margin-top: 2rem;
+}
+
+.page-numbers a.active{
+    cursor: pointer;
+}
+
+.number {
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 0.5em 1em 0.5em 1em;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    border: rgb(143, 143, 143) solid;
+    border-radius: 0.25vw;
+    background: #ffffff;
+
+    color: black;
+}
+
+.number:hover {
+    background: #efefef;
+
+    color: black;
+}
+
+.number.active {
+    pointer-events: none;
+    color: white;
+    background: #9c9c9c;
+
+    border: rgb(70, 70, 70) solid;
+}

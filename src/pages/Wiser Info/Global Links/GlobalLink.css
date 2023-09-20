@@ -1,0 +1,18 @@
+.global-link div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: left;
+}
+
+.global-link div a {
+    overflow-wrap: break-word;
+
+    font-size: 1vw;
+}
+
+.global-link img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

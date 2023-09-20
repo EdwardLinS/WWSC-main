@@ -1,0 +1,34 @@
+.signup-form {
+    max-width: 360px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+.signup-form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  margin: 30px auto;
+}
+.signup-form span {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 1.5rem;
+}
+.signup-form input {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: #777;
+  width: 100%;
+}
+.signup-form h2 {
+  font-size: 3rem;
+}
+.signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
