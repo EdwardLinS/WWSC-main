@@ -1,0 +1,71 @@
+{
+    "document": {
+        "title": "World Wiser Sport Committee"
+    },
+    "header": {
+        "title": "World Wiser Sport Committee",
+        "subtitle": "Offical Web Site of Wiser Ball",
+        "slogan": "Play 'Wiser' & Get Wiser",
+        "signup": "Signup",
+        "login": "Login",
+        "language_select": "Select Language"
+    },
+
+    "navbar": {
+        "home": "HOME",
+        "about_us": "ABOUT US",
+        "au_subtitle_1": "Introduction to Wiser Sport",
+        "au_subtitle_2": "Mission Statement of WWSC",
+        "wiser_sport": "WISER SPORT",
+        "ws_subtitle_1": "The Rules of Wiser Sport",
+        "ws_subtitle_2": "Balls and Basic Equipment",
+        "ws_subtitle_3": "Dress Code",
+        "ws_subtitle_4": "Glossary of Terms",
+        "play_wiser": "PLAY WISER",
+        "pw_subtitle_1": "Video Tutorial: “How to Play Wiser Ball”",
+        "pw_subtitle_2": "WWSC Demo Video (Marching/Etiquette/Interception)",
+        "pw_subtitle_3": "Wiser Referee Training",
+        "pw_subtitle_4": "How to Record A Wiser Ball Game",
+        "pw_subtitle_5": "Frequently Asked Questions (FAQs)",
+        "gallery": "GALLERY",
+        "ga_subtitle_1": "WWSC’s G4 Referee Trainings",
+        "ga_subtitle_2": "WWSC in Hong Kong",
+        "ga_subtitle_3": "Wiser Sport Activities (1)",
+        "ga_subtitle_4": "Wiser Sport Activities (2)",
+        "wiser_info": "WISER INFO",
+        "wi_subtitle_1": "WWSC’s First Inaugural Ceremony",
+        "wi_subtitle_2": "Notices",
+        "wi_subtitle_3": "Wiser Event News",
+        "wi_subtitle_4": "Wiser Global Links",
+        "referee_system": "REFEREE SYSTEM",
+        "contact_us": "CONTACT US"
+    },
+
+    "intro": {
+        "title": "Introduction to Wiser Sport"
+    },
+
+    "mission": {
+        "title": "Our Mission Statement"
+    },
+
+    "dress_code": {
+        "title": "Dress Code for Wiser Sport",
+        "img_caption":"Players wear Wiser athletic sportswear in formal Wiser ball competitions."
+    },
+
+    "contact_us": {
+        "img_caption": "Outside view of the WWSC office building"
+    },
+
+    "footer": {
+        "home": "HOME",
+        "about_us": "ABOUT US",
+        "wiser_sport": "WISER SPORT",
+        "play_wiser": "PLAY WISER",
+        "private_policy": "PRIVATE POLICY",
+        "terms_conditions": "TERMS & CONDITIONS",
+        "contact_us": "CONTACT US",
+        "copy_rights": "© 2012-2023 World Wiser Sport Committee. All Rights Reserved."
+    }
+}

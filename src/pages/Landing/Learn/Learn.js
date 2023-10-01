@@ -24,7 +24,7 @@ export default function Learn() {
   }, [inView])
 
   return (
-    <div className='learn' ref={containerRef}>
+    <div className='learn w3-theme-d1' ref={containerRef}>
         <h1 class="heading learn-heading">Learn the Rules</h1>
         <img id="learn-pic" src="/assets/Landing/Play_T_1.jpg" alt="" />
         <div ref={ref}/>

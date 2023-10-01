@@ -2,15 +2,15 @@
 
 import "./App.css";
 
-import {
-    BrowserRouter,
-    Route,
-    Routes,
-    Navigate,
-} from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import { useAuthContext } from "./hooks/useAuthContext";
+import { useState, useEffect } from "react";
+import { useFetch } from "./hooks/useFetch";
+
+// import components & pages
 
 import Landing from "./pages/Landing/Landing";
 import Contact from "./pages/Contact/Contact";
@@ -38,8 +38,7 @@ import RefereeHome from "./pages/Referee/RefereeHome/RefereeHome";
 import Login from "./pages/Referee/login/Login";
 import Signup from "./pages/Referee/signup/Signup";
 
-import { useState } from "react";
-import { useFetch } from "./hooks/useFetch";
+
 import NoticePage from "./components/NoticePage/NoticePage";
 import Privacy from "./pages/Privacy Policy/Privacy";
 import Terms from "./pages/Terms/Terms";
@@ -48,9 +47,21 @@ import NewBread from "./components/NewBread/NewBread";
 import RefereeProfile from "./pages/Referee/RefereeProfile/RefereeProfile";
 import RefereeRecord from "./pages/Referee/RefereeRecord/RefereeRecord";
 
-
 function App() {
+    
+    const { t, i18n } = useTranslation("global");
+
+    const currentLanguage = i18n.language;
+    
+    useEffect(() => {
+        console.log('Setting document title')
+        document.title = t('document.title')
+      }, [currentLanguage, t])
+
     const [url, setUrl] = useState(process.env.REACT_APP_WORDPRESS_API);
+
+
+
 
     let { data: notices, isPending, error } = useFetch(url, { type: "GET" });
 

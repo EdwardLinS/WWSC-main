@@ -1,35 +1,115 @@
-.login-form {
-    max-width: 360px;
-    margin: 60px auto;
-    padding: 20px;
-  }
-.login-form label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/** @format */
 
-  margin: 30px auto;
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 840px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgba(175, 175, 175, 0.5) solid;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+    padding: 40px 40px;
+
+    gap: 12px;
+}
+
+.login-form .imgWarpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.login-form .logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.login-form .referee {
+    width: 150px;
+    height: 146px;
+    /* margin-bottom: 10px; */
+}
+.login-form h1 {
+    font-size: 28px;
+    font-weight: 600;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 200px;
+    background-color: #073b3a18;
+}
+
+.login-form h2 {
+    font-size: 18px;
+    color: #0e6362d9;
+}
+
+.login-form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+    margin-left: auto;
 }
 .login-form span {
-  display: block;
-  margin-bottom: 6px;
-  
-  font-size: 1.5rem;
+    /* display: block; */
+    /* margin-bottom: 6px; */
+    font-size: 14px;
+    color: grey;
 }
 .login-form input {
-  padding: 8px 6px;
-  font-size: 1em;
-  color: #777;
-  width: 115%;
-}
-.login-form h2 {
-  font-size: 3rem;
-}
-.login {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    /* padding: 8px 6px;
+    font-size: 1em;
+    color: #777;
+    width: 115%; */
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
 }
 
+.login-form input::placeholder {
+    color: lightgrey;
+}
+.login-form > button {
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #073b3a;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.login-form > button:hover {
+    color: white;
+    background-color: #0e6361;
+}
+
+.login-form .error {
+    font-size: 14px;
+    font-weight: 600;
+    color: tomato;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 12px 100px;
+    background-color: rgba(255, 99, 71, 0.258);
+}

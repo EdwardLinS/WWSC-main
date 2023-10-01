@@ -10,7 +10,7 @@ export default function Join() {
     }
 
   return (
-    <div className="join">
+    <div className="join w3-theme-d1">
         <h1 class="heading join-head">Join Us!</h1>
         <div className="join-content">
             <img id="join-pic" src="/assets/Landing/Event_HK_2.jpg" alt="" />

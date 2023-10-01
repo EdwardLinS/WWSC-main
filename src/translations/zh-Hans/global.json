@@ -1,0 +1,67 @@
+{
+    "document": {
+        "title": "世界WISER运动委员会"
+    },
+
+    "header": {
+        "title": "世界WISER运动委员会",
+        "subtitle": "Wiser球(高智尔球)官方网站",
+        "slogan": "打高智尔球，将更加提升您的智慧",
+        "signup": "登记注册",
+        "login": "登入",
+        "language_select": "选择语言"
+    },
+    "navbar": {
+        "home": "首页",
+        "about_us": "关於我们",
+        "au_subtitle_1": "Wiser运动简介",
+        "au_subtitle_2": "我们的宗旨",
+        "wiser_sport": "Wiser 运动",
+        "ws_subtitle_1": "Wiser 运动比赛规则",
+        "ws_subtitle_2": "器具和基本装备",
+        "ws_subtitle_3": "球员穿著",
+        "ws_subtitle_4": "常用专业术语",
+        "play_wiser": "培训教学专区",
+        "pw_subtitle_1": "教学视频: 如何打Wiser球",
+        "pw_subtitle_2": "示範视频（正步/礼仪/拦击）",
+        "pw_subtitle_3": "裁判员培训",
+        "pw_subtitle_4": "记录Wiser比赛",
+        "pw_subtitle_5": "常见问题解答",
+        "gallery": "活动花絮",
+        "ga_subtitle_1": "WWSC 第四级裁判员培训",
+        "ga_subtitle_2": "WWSC 香港教学推广",
+        "ga_subtitle_3": "全球Wiser 活动相簿 (1)",
+        "ga_subtitle_4": "全球Wiser 活动相簿 (2)",
+        "wiser_info": "Wiser 讯息",
+        "wi_subtitle_1": "第一届就职典礼",
+        "wi_subtitle_2": "通知",
+        "wi_subtitle_3": "活动讯息",
+        "wi_subtitle_4": "全球网路链接",
+        "referee_system": "裁判員登录系统",
+        "contact_us": "联络我们"
+    },
+    "intro": {
+        "title": "Wiser运动简介"
+    },
+
+    "mission": {
+        "title": "我们的宗旨"
+    },
+    "dress_code": {
+        "title": "Wiser运动球员的穿著",
+        "img_caption":"球员们穿著Wiser球员运动装参加正式的Wiser运动竞赛"
+    },
+    "contact_us": {
+        "img_caption": "WWSC 总部办公室外观"
+    },
+    "footer": {
+        "home": "首页",
+        "about_us": "关於我们",
+        "wiser_sport": "Wiser 运动",
+        "play_wiser": "培训教学专区",
+        "private_policy": "隐私权政策",
+        "terms_conditions": "网站使用条款与条件",
+        "contact_us": "联络我们",
+        "copy_rights":"© 2012-2023本网站所有内容版权属于世界Wiser运动委员会"
+    }
+}

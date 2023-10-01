@@ -5,9 +5,7 @@
     font-family: "Roboto", sans-serif;
     width: 100%;
     min-height: 250px;
-    color: white;
-    background-color: #073b3a;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .footer .links {
@@ -22,7 +20,7 @@
     /* margin-top: 1vw; */
 }
 
-#footer-link a:hover {
+.footer-link a:hover {
     text-decoration: "underline";
 }
 
@@ -33,12 +31,14 @@
 
 .footer p {
     color: white;
-    text-decoration: "underline";
 }
 
 .copyright {
     padding: 20px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: #073b3a; */
 }
 
@@ -64,7 +64,7 @@
 }
 
 .social-icon__link {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -81,11 +81,7 @@
     font-weight: 300;
 }
 
-@keyframes animate {
-    0% {
-        background-position-x: -1000px;
-    }
-    100% {
-        background-positon-x: 0px;
-    }
+.w3-theme-d5 {
+    color: #fff !important;
+    background-color: #031e1d !important;
 }

@@ -3,115 +3,120 @@
 import { NavLink } from "react-router-dom";
 import CustomDrop from "../CustomDrop/CustomDrop";
 import "./Navbar.css";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
-    const linkArray = [
-        {
-            title: "About Us",
-            className: "about-us",
-            link: null,
-            caret: true,
-            linkList: [
-                { title: "Introduction to Wiser Sport", link: "/about-us/introduction-to-wiser-sport/" },
-                { title: "Mission Statement of WWSC", link: "/about-us/mission-statement-of-wwsc/" },
-            ],
-        },
+    const { t, i18n } = useTranslation("global");
 
-        {
-            title: "Wiser Sport",
-            className: "sport",
-            link: null,
-            caret: true,
-            linkList: [
-                { title: "The Rules of Wiser Sport", link: "/wiser-sport/the-rules-of-wiser-sport/" },
-                {
-                    title: "Balls and Basic Equipment for Wiser Sport",
-                    link: "/wiser-sport/balls-and-basic-equipment-for-wiser-sport/",
-                },
-                { title: "Dress Code for Wiser Sport", link: "/wiser-sport/dress-code-for-wiser-sport/" },
-                { title: "Glossary of Terms", link: "/wiser-sport/glossary-of-terms/" },
-            ],
-        },
+    // const lang = i18n.language;
 
-        {
-            title: "Play Wiser",
-            className: "play",
-            link: null,
-            caret: true,
-            linkList: [
-                {
-                    title: "Video Tutorial: “How to Play Wiser Ball”",
-                    link: "/play-wiser/video-tutorial-play-wiser-ball",
-                },
-                {
-                    title: "WWSC Demo Video (Marching/Etiquette/Interception)",
-                    link: "/play-wiser/wwsc-demo-video-marching-etiquette-interception",
-                },
-                { title: "Wiser Referee Training", link: "/play-wiser/wiser-referee-training" },
-                { title: "How to Record A Wiser Ball Game", link: "/play-wiser/game-recording-sheet-app-download" },
-                { title: "Frequently Asked Questions (FAQs)", link: "/play-wiser/faqs" },
-            ],
-        },
+    
+      
+        const linkArray = [
+            {
+                title: t("navbar.about_us"),
+                className: "about-us",
+                link: null,
+                caret: true,
+                linkList: [
+                    { title: t("navbar.au_subtitle_1"), link: "/about-us/introduction-to-wiser-sport/" },
+                    { title: t("navbar.au_subtitle_2"), link: "/about-us/mission-statement-of-wwsc/" },
+                ],
+            },
 
-        {
-            title: "Galleries",
-            className: "gallery",
-            link: null,
-            caret: true,
-            linkList: [
-                {
-                    title: "WWSC’s G4 Referee Trainings",
-                    link: "/galleries/wwsc-g4-referee-training-albums",
-                },
-                {
-                    title: "WWSC in Hong Kong",
-                    link: "/galleries/wwsc-hong-kong-gallery",
-                },
-                {
-                    title: "Wiser Sport Activities (1)",
-                    link: "/galleries/galleries-of-wiser-sport-activities-around-the-world-1",
-                },
-                {
-                    title: "Wiser Sport Activities (2)",
-                    link: "/galleries/galleries-of-wiser-sport-activities-around-the-world-2",
-                },
-            ],
-        },
+            {
+                title: t("navbar.wiser_sport"),
+                className: "sport",
+                link: null,
+                caret: true,
+                linkList: [
+                    { title: t("navbar.ws_subtitle_1"), link: "/wiser-sport/the-rules-of-wiser-sport/" },
+                    {
+                        title: t("navbar.ws_subtitle_2"),
+                        link: "/wiser-sport/balls-and-basic-equipment-for-wiser-sport/",
+                    },
+                    { title: t("navbar.ws_subtitle_3"), link: "/wiser-sport/dress-code-for-wiser-sport/" },
+                    { title: t("navbar.ws_subtitle_4"), link: "/wiser-sport/glossary-of-terms/" },
+                ],
+            },
 
-        {
-            title: "Wiser Info",
-            className: "info",
-            link: null,
-            caret: true,
-            linkList: [
-                { title: "WWSC’s First Inaugural Ceremony", link: "/wiser-info/wwsc-inaugural-ceremony" },
-                { title: "Notices", link: "/wiser-info/wwsc-notices-1" },
-                { title: "Wiser Event News", link: "/wiser-info/wiser-event-news" },
-                { title: "Wiser Global Links", link: "/wiser-info/wiser-global-links" },
-            ],
-        },
-        { title: "Contact", className: "contact", link: "/contact-us", caret: false, linkList: [] },
+            {
+                title: t("navbar.play_wiser"),
+                className: "play",
+                link: null,
+                caret: true,
+                linkList: [
+                    {
+                        title: t("navbar.pw_subtitle_1"),
+                        link: "/play-wiser/video-tutorial-play-wiser-ball",
+                    },
+                    {
+                        title: t("navbar.pw_subtitle_2"),
+                        link: "/play-wiser/wwsc-demo-video-marching-etiquette-interception",
+                    },
+                    { title: t("navbar.pw_subtitle_3"), link: "/play-wiser/wiser-referee-training" },
+                    {
+                        title: t("navbar.pw_subtitle_4"),
+                        link: "/play-wiser/game-recording-sheet-app-download",
+                    },
+                    { title: t("navbar.pw_subtitle_5"), link: "/play-wiser/faqs" },
+                ],
+            },
 
-        // temporary button access
-        { title: "Referee System", className: "referee-system", link: "/referee-home", caret: false, linkList: [] },
-    ];
+            {
+                title: t("navbar.gallery"),
+                className: "gallery",
+                link: null,
+                caret: true,
+                linkList: [
+                    {
+                        title: t("navbar.ga_subtitle_1"),
+                        link: "/galleries/wwsc-g4-referee-training-albums",
+                    },
+                    {
+                        title: t("navbar.ga_subtitle_2"),
+                        link: "/galleries/wwsc-hong-kong-gallery",
+                    },
+                    {
+                        title: t("navbar.ga_subtitle_3"),
+                        link: "/galleries/galleries-of-wiser-sport-activities-around-the-world-1",
+                    },
+                    {
+                        title: t("navbar.ga_subtitle_4"),
+                        link: "/galleries/galleries-of-wiser-sport-activities-around-the-world-2",
+                    },
+                ],
+            },
 
-    // const linkStyle = {
-    //     height: "100%",
-    //     width: "100%",
-
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    // };
-
+            {
+                title: t("navbar.wiser_info"),
+                className: "info",
+                link: null,
+                caret: true,
+                linkList: [
+                    { title: t("navbar.wi_subtitle_1"), link: "/wiser-info/wwsc-inaugural-ceremony" },
+                    { title: t("navbar.wi_subtitle_2"), link: "/wiser-info/wwsc-notices-1" },
+                    { title: t("navbar.wi_subtitle_3"), link: "/wiser-info/wiser-event-news" },
+                    { title: t("navbar.wi_subtitle_4"), link: "/wiser-info/wiser-global-links" },
+                ],
+            },
+            // temporary button access
+            {
+                title: t("navbar.referee_system"),
+                className: "referee-system",
+                link: "/referee-home",
+                caret: false,
+                linkList: [],
+            },
+            { title: t("navbar.contact_us"), className: "contact", link: "/contact-us", caret: false, linkList: [] },
+        ]
+    
     return (
-        <div className="navbar">
+        <div className="navbar w3-theme-d3 ">
             <div className="navbar-container">
                 <div className="custom-dropdown">
                     <NavLink to="/" className="custom-link">
-                        Home
+                        {t("navbar.home")}
                     </NavLink>
                 </div>
 
@@ -126,7 +131,7 @@ export default function Navbar() {
                     />
                 ))}
 
-                <div className="custom-dropdown">Search</div>
+              
             </div>
         </div>
     );

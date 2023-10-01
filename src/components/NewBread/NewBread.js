@@ -17,12 +17,12 @@ export default function NewBread() {
 
             return (
                 <div>
-                    <BreadcrumbItem active style={{ fontSize: "1.5 vw" }}>
+                    <BreadcrumbItem active>
                         /
                         <Link
                             style={{
-                                marginLeft: "0.5rem",
-                                marginRight: "0.5rem",
+                                marginLeft: "5px",
+                                marginRight: "5px",
                                 textDecoration: "none",
                                 color: "gray",
                                 pointerEvents: "none",
@@ -43,7 +43,7 @@ export default function NewBread() {
     crumbs.unshift(
         <div>
             <BreadcrumbItem active>
-                <Link exact to={"/"} style={{ fontSize: "1.5 vw", marginRight: "0.5rem" }}>
+                <Link exact to={"/"} style={{ marginRight: "5px" }}>
                     Home
                 </Link>
             </BreadcrumbItem>
