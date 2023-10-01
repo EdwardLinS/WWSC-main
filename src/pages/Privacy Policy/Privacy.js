@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
 export default function Privacy() {
-    const { t, i18n } = useTranslation("global");
+    const { i18n } = useTranslation("global");
 
     const lang = i18n.language;
     // console.log(i18n.language);
