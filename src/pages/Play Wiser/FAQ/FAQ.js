@@ -8,8 +8,8 @@ export default function FAQ() {
     const generalContent = (
         <div style={{ marginTop: "1vw" }}>
             <TextDrop 
-                title="1. Is there any time limit for an official Wiser game?" 
-                text="Except for Phase I of Ball Serving, there is a one-minute time limit for tactical discussion for each team’s turn to attack. Otherwise, there is no time limit for an official Wiser ball game!" 
+                title="1. Is there any time limit for an official Wiser game?"
+                text={<p>Except for Phase I of Ball Serving, there is a one-minute time limit for tactical discussion for each team’s turn to attack. Otherwise, there is no time limit for an official Wiser ball game!</p>} 
             />
 
             <TextDrop 
@@ -157,8 +157,8 @@ export default function FAQ() {
 
     return (
         <div>
-            <div className="custom-container faq-container">
-                <div className="text faq-text">
+            <div className="wwsc-container">
+                <div className="img-text-container">
                     <h1>Frequently Asked Questions (FAQs)</h1>
                     <p>The following are frequently asked questions of Wiser Sport. Please click the topic of any question to see our replies.</p>
 

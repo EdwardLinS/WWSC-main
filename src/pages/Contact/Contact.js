@@ -53,7 +53,7 @@ export default function Contact() {
                     </div>
                 </div>
             )}
-            {lang === "zhHant" && (
+            {lang === "zh-TW" && (
                 <div className="img-text-container">
                     <h1>聯絡我們</h1>
                     <h4>世界Wiser運動委員會的聯絡訊息:</h4>
@@ -89,7 +89,7 @@ export default function Contact() {
                     </div>
                 </div>
             )}
-            {lang === "zhHans" && (
+            {lang === "zh-CN" && (
                 <div className="img-text-container">
                     <h1>联络我们</h1>
                     <h4>世界Wiser运动委员会的联络讯息:</h4>

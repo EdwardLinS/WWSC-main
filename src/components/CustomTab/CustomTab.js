@@ -9,20 +9,21 @@ import {
 } from 'reactstrap';
 
 import './CustomTab.css'
+import { teal } from '@mui/material/colors';
 
 export default function CustomTab({content}) {
 
     const [activeTab, setActiveTab] = useState("1");
 
     return (
-        <div className='custom-tab'>
+        <div className=''>
             <Nav tabs>
                 {content.map((elem, ind) => (
-                    <NavItem>
+                    <NavItem >
                         <NavLink
                             className={activeTab === (ind + 1).toString() ? "active" : ""}
                             onClick={function noRefCheck() { setActiveTab((ind + 1).toString()) }}
-                            style={{fontSize: "1.75rem", paddingLeft: "1.5vw", paddingRight: "1.5vw"}}
+                            style={{fontSize: "1.25rem", paddingLeft: "1.5vw", paddingRight: "1.5vw"}}
                         >
                             {elem.title}
                         </NavLink>

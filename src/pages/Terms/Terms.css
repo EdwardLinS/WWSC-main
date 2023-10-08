@@ -1,40 +1,30 @@
-.terms li::marker {
-    font-size: 1.5rem;
+.w3-section li {
+    font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+    line-height: 2;
+    padding-left: 1rem;
+}
+.w3-section li::marker {
+    font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+    line-height: 2;
+    padding-right: 1rem;
 }
 
-.terms ol {
+.w3-section ol {
     padding-left: 4rem;
 }
 
-.terms h1 {
-    font-size: 3rem;
-    font-weight: bold;
+.w3-section .no-ident {
+    text-indent: 0;
 }
 
-.terms h2 {
-    color: black;
-
-    padding-top: 1.5rem;
-    font-weight: bold;
+.term-image-container {
+    width: 82%;
+    position: relative;
+    border-radius: 0.5vw 0.5vw 0vw 0vw;
 }
-
-.terms h3 {
-    font-size: 2rem;
-    font-weight: bold;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.terms > p, .terms li {
-    font-size: 1.5rem;
-    line-height: 4rem;
-}
-
-.address {
-    line-height: 2rem;
-    font-size: 1.5rem;
-
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.term-image-container img {
+    width: 100%;
+    height: 500px;
+    border-radius: 0.5vw 0.5vw 0vw 0vw;
+    object-fit: cover;
 }

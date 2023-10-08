@@ -47,9 +47,34 @@
     "mission": {
         "title": "我们的宗旨"
     },
+
+    "rule": {
+        "title": "Wiser运动比赛规则",
+        "tab_new": "新版规则(03/21/2018)",
+        "tab_old": "旧版规则 1.0 版本(11/30/2013)"
+    },
     "dress_code": {
         "title": "Wiser运动球员的穿著",
-        "img_caption":"球员们穿著Wiser球员运动装参加正式的Wiser运动竞赛"
+        "img_caption": "球员们穿著Wiser球员运动装参加正式的Wiser运动竞赛"
+    },
+    "equipment": {
+        "title": "球具和基本装备",
+        "tab_balls": "球",
+        "tab_flags": "旗子",
+        "tab_rope": "绳子",
+        "content_flags_spec": "旗子的规格和尺寸 (测量单位 ft. 为英呎的英文字feet的缩写)",
+        "content_rope_spec": "(测量单位 m 为米或公尺的英文字meter的缩写)"
+    },
+    "terms":{
+        "title": "常用Wiser运动专业术语",
+        "tab_rule": "于规则手册中出现顺序",
+        "tab_abc": "英文字母顺序"
+
+
+    },
+    "video_tutorial":{
+        "title": "教学视频: 如何打Wiser球"
+        
     },
     "contact_us": {
         "img_caption": "WWSC 总部办公室外观"
@@ -57,11 +82,11 @@
     "footer": {
         "home": "首页",
         "about_us": "关於我们",
-        "wiser_sport": "Wiser 运动",
+        "wiser_sport": "WISER 运动",
         "play_wiser": "培训教学专区",
-        "private_policy": "隐私权政策",
+        "privacy_policy": "隐私权政策",
         "terms_conditions": "网站使用条款与条件",
         "contact_us": "联络我们",
-        "copy_rights":"© 2012-2023本网站所有内容版权属于世界Wiser运动委员会"
+        "copy_rights": "© 2012-2023本网站所有内容版权属于世界Wiser运动委员会"
     }
 }

@@ -6,7 +6,7 @@ export default function Referee({ history }) {
 
     const certContent = (
         <div className="content">
-            <h1 className='referee-header'>I.  Certification System for Wiser Referees</h1>
+            <h3 className='referee-header'>I.  Certification System for Wiser Referees</h3>
             <p>1.  All grades of official Wiser referees must complete the World Wiser Sport Committee’s (WWSC) required training courses and assessments. After being qualified, a referee certificate corresponding to its grade will then be issued by the WWSC.</p>
             <p>2.  The grade of Wiser Referee represents its qualification that can be assigned to officiate certain levels of Wiser matches/tournaments.</p>
             <p>3.  Official Wiser referees certified by the World Wiser Sport Committee are divided into the following four major grades:</p>
@@ -15,7 +15,7 @@ export default function Referee({ history }) {
 
     const dutyContent = (
         <div className="content">
-            <h1 className='referee-header'>II.  Duties and Responsibilities of a Referee in a Wiser Game</h1>
+            <h3 className='referee-header'>II.  Duties and Responsibilities of a Referee in a Wiser Game</h3>
             <p>1. Enforce the rules of the Wiser sport set by World Wiser Sport Committee (WWSC);</p>
             <p>2. Maintain order and safety in the game and ensure fair competitions;</p>
             <p>3. Ensure that the playing field is set up properly and the balls, flags and equipment meet all requirements;</p>
@@ -41,8 +41,8 @@ export default function Referee({ history }) {
 
     return (
         <div>
-            <div className="custom-container">
-                <div className="text">
+            <div className="wwsc-container">
+                <div className="img-text-container">
                     <h1>Wiser Referee Training</h1>
                     <CustomTab content={content} />
                 </div>

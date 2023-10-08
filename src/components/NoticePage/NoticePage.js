@@ -8,8 +8,8 @@ export default function NoticePage({ content }) {
 
     return (
         <div>
-            <div className="custom-container">
-                <div className="text">
+            <div className="wwsc-container">
+                <div className="img-text-container">
                     <div className="notice-page" dangerouslySetInnerHTML={{ __html: content }} style={styleNotice} />
                 </div>
             </div>

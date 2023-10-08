@@ -1,36 +1,70 @@
 /** @format */
 
 .footer {
-    margin-top: 0px;
+    margin-top: 2rem;
     font-family: "Roboto", sans-serif;
     width: 100%;
-    min-height: 250px;
-    padding-top: 25px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+
+.social-icon__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icon__link:hover {
+    transform: translateY(-10px);
 }
 
 .footer .links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     color: white;
-    width: 60%;
+    max-width:fit-content;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+
     /* margin-top: 1vw; */
+}
+
+.footer-link {
+    padding: 1.5rem;
+}
+
+.footer-link a {
+    color: white;
 }
 
 .footer-link a:hover {
     text-decoration: "underline";
 }
 
-.footer hr {
-    width: 60%;
-    margin: auto;
-}
-
 .footer p {
     color: white;
+    margin-bottom: 0;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .copyright {
@@ -50,38 +84,19 @@
     /* margin-right: 0.5vw; */
 }
 
-.social-icon {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-
-.social-icon__item {
-    list-style: none;
-}
-
-.social-icon__link {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
-.social-icon__link:hover {
-    transform: translateY(-10px);
-}
-
-.footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
 .w3-theme-d5 {
     color: #fff !important;
     background-color: #031e1d !important;
+}
+
+@media screen and (max-width: 960px) {
+    .footer .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-link {
+        padding: 0.6rem;
+    }
 }

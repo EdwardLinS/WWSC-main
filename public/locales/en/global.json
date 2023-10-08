@@ -2,6 +2,7 @@
     "document": {
         "title": "World Wiser Sport Committee"
     },
+
     "header": {
         "title": "World Wiser Sport Committee",
         "subtitle": "Offical Web Site of Wiser Ball",
@@ -9,6 +10,10 @@
         "signup": "Signup",
         "login": "Login",
         "language_select": "Select Language"
+    },
+
+    "routes": {
+        "intro": "'/about-us/introduction-to-wiser-sport/'"
     },
 
     "navbar": {
@@ -49,9 +54,37 @@
         "title": "Our Mission Statement"
     },
 
+    "rule": {
+        "title": "Rules Handbook for Wiser Sport",
+        "tab_new": "Updated Rules(03/21/2018)",
+        "tab_old": "Old Rules Version 1.0(11/30/2013)"
+    },
+
     "dress_code": {
         "title": "Dress Code for Wiser Sport",
-        "img_caption":"Players wear Wiser athletic sportswear in formal Wiser ball competitions."
+        "img_caption": "Players wear Wiser athletic sportswear in formal Wiser ball competitions."
+    },
+
+    "equipment": {
+        "title": "Balls and Basic Equipment",
+        "tab_balls": "Balls",
+        "tab_flags": "Flags",
+        "tab_rope": "Rope",
+        "content_flags_spec": "Specifications & Dimensions of Flags",
+        "content_rope_spec": "(m: meter)"
+    },
+
+    "terms":{
+        "title": "Common Terminologies of Wiser Sport",
+        "tab_rule": "Orders in Rules Handbook",
+        "tab_abc": "Alphabetical Order"
+
+
+    },
+
+    "video_tutorial":{
+        "title": "Video Tutorial: How to Play Wiser Ball"
+        
     },
 
     "contact_us": {
@@ -63,7 +96,7 @@
         "about_us": "ABOUT US",
         "wiser_sport": "WISER SPORT",
         "play_wiser": "PLAY WISER",
-        "private_policy": "PRIVATE POLICY",
+        "privacy_policy": "PRIVACY POLICY",
         "terms_conditions": "TERMS & CONDITIONS",
         "contact_us": "CONTACT US",
         "copy_rights": "© 2012-2023 World Wiser Sport Committee. All Rights Reserved."

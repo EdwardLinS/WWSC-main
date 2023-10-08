@@ -1,28 +1,28 @@
 /** @format */
 
-h1 {
+/* .img-text-container h1 {
     color: #d45b39;
     margin-top: 10px;
     margin-bottom: 1vw;
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 4rem;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
-p {
+.img-text-container p {
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     text-align: justify;
     text-indent: 3rem;
 }
 
 
-.signature {
+.img-text-container .signature {
     color: var(--primary);
-    font-weight: 700;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.5rem;
     text-align: right;
     padding-top: 0.5vw;
     padding-bottom: 3vw;
-}
+} */

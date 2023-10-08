@@ -1,3 +1,5 @@
+/** @format */
+
 .text-drop {
     border: rgb(200, 200, 200) solid;
     border-radius: 0.5vw;
@@ -6,15 +8,16 @@
 }
 
 .text-drop button {
-    font-size: 1vw;
-    font-weight: bold;
-    padding: 0.5vw;
+    font-size: 20px;
+    /* font-weight: bold; */
+    padding: 12px;
+    color: #d45b39;
 }
 
 .text-drop p {
     padding-left: 2vw;
     padding-right: 1.5vw;
-    font-size: 0.9vw;
+    font-size: 18px;
 
     display: flex;
     flex-direction: column;

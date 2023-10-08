@@ -4,10 +4,10 @@ import "./Introduction.css";
 import { useTranslation } from "react-i18next";
 
 export default function Introduction() {
-    const { t, i18n } = useTranslation("global");
+    const { t, i18n} = useTranslation();
 
     const lang = i18n.language;
-    // console.log(i18n.language);
+    console.log(i18n.language);
 
     return (
         <div className="wwsc-container">
@@ -129,7 +129,7 @@ export default function Introduction() {
                     <div class="signature">World Wiser Sport Committee</div>
                 </div>
             )}
-            {lang === "zhHant" && (
+            {lang === "zh-TW" && (
                 <div className="img-text-container">
                     <h1>{t("intro.title")}</h1>
                     <p>
@@ -171,7 +171,7 @@ export default function Introduction() {
                     <div class="signature">世界Wiser運動委員會</div>
                 </div>
             )}
-            {lang === "zhHans" && (
+            {lang === "zh-CN" && (
                 <div className="img-text-container">
                     <h1>{t("intro.title")}</h1>
                     <p>

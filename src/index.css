@@ -3,10 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-
 :root {
     /* Variables */
-    --primary: #073b3a;
+    --primary: teal;
     --secondary: #d77d12;
     --bg-color: #f6fff8;
 }
@@ -21,23 +20,39 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-        "Droid Sans", "Helvetica Neue", "Poppins" sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", "Poppins" sans-serif; */
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--primary);
+    color: teal;
     overflow-x: hidden;
     background-color: var(--bg-color);
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto", sans-serif;
+    color: #d45b39;
+}
+
+h1 {
+    color: #d45b39;
+    margin-top: 10px;
+    margin-bottom: 1vw;
+    font-size: clamp(1.8rem, 1.534rem + 0.8511vw, 2.3rem);
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* text-align: center; */
+}
+
+p {
+    font-size: (1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+    line-height: 2;
 }
 
 a {
@@ -45,7 +60,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--secondary);
 }
 
@@ -65,22 +80,20 @@ a:hover {
     flex-direction: column;
     /* justify-items: center; */
     align-items: center;
-    
 }
 
 .image-container {
     width: 82%;
-    position:relative;
+    position: relative;
     border-radius: 0.5vw 0.5vw 0vw 0vw;
-
 }
 .image-container img {
     width: 100%;
-    /* height: auto;  */
+    height: auto;
     border-radius: 0.5vw 0.5vw 0vw 0vw;
-    /* width: 200px; */
-    height: 540px; 
-    object-fit:filled;
+    object-fit: cover;
+    /* height: 500px; */
+    /* container-type: ; */
 }
 
 .img-text-container {
@@ -96,7 +109,6 @@ a:hover {
     /* line-height: 3rem; */
 }
 
-
 .text-container {
     background: #fefefe;
     border-radius: 0.5vw;
@@ -106,17 +118,47 @@ a:hover {
     padding: 1vw 4vw 2vw 4vw;
     margin-bottom: 20px;
     border: 1px solid lightgray;
-
-    /* line-height: 3rem; */
 }
 
+.img-text-container h1 {
+    color: #d45b39;
+    margin-top: 10px;
+    margin-bottom: 1vw;
+    font-size: clamp(1.8rem, 1.534rem + 0.8511vw, 2.3rem);
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
-/* .signature {
-    color: var(--primary);
+.img-text-container p {
+    font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+    line-height: 2;
+    text-align: justify;
+    text-indent: clamp(3rem, 1.9362rem + 3.4043vw, 5rem);
+}
+
+.img-text-container .signature {
+    color: teal;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: right;
     padding-top: 0.5vw;
     padding-bottom: 3vw;
-} */
+}
 
+.text-container h1 {
+    color: #d45b39;
+    margin-top: 10px;
+    margin-bottom: 1vw;
+    font-size: 2.3rem;
+    line-height: 4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.text-container p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    text-indent: 3rem;
+}

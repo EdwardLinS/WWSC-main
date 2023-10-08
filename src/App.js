@@ -38,7 +38,6 @@ import RefereeHome from "./pages/Referee/RefereeHome/RefereeHome";
 import Login from "./pages/Referee/login/Login";
 import Signup from "./pages/Referee/signup/Signup";
 
-
 import NoticePage from "./components/NoticePage/NoticePage";
 import Privacy from "./pages/Privacy Policy/Privacy";
 import Terms from "./pages/Terms/Terms";
@@ -48,20 +47,16 @@ import RefereeProfile from "./pages/Referee/RefereeProfile/RefereeProfile";
 import RefereeRecord from "./pages/Referee/RefereeRecord/RefereeRecord";
 
 function App() {
-    
     const { t, i18n } = useTranslation("global");
 
     const currentLanguage = i18n.language;
-    
+
     useEffect(() => {
-        console.log('Setting document title')
-        document.title = t('document.title')
-      }, [currentLanguage, t])
+        console.log("Setting document title");
+        document.title = t("document.title");
+    }, [currentLanguage, t]);
 
     const [url, setUrl] = useState(process.env.REACT_APP_WORDPRESS_API);
-
-
-
 
     let { data: notices, isPending, error } = useFetch(url, { type: "GET" });
 
@@ -71,8 +66,6 @@ function App() {
         <div className="App">
             {authIsReady && (
                 <ParallaxProvider>
-                    {/* <RotatingScrollbar /> */}
-
                     <BrowserRouter>
                         <Header />
                         <Navbar />
@@ -81,7 +74,6 @@ function App() {
                             <Route exact path="/" Component={Landing} />
                             <Route path="/wwsc-privacy-policy" element={<Privacy />} />
                             <Route path="/terms-conditions" element={<Terms />} />
-
                             <Route path="/about-us/introduction-to-wiser-sport/" element={<Introduction />} />
                             <Route path="/about-us/mission-statement-of-wwsc/" element={<Mission />} />
 

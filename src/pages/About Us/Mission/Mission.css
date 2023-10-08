@@ -1,10 +1,10 @@
 /** @format */
 
-img {
+.logo-img {
     width: 120px;
 }
 
-h1 {
+/* h1 {
     color: #d45b39;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -27,4 +27,4 @@ p {
     text-align: right;
     padding-top: 0.5vw;
     padding-bottom: 3vw;
-}
+} */

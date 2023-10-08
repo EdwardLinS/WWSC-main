@@ -12,9 +12,9 @@ export default function Mission() {
     return (
         <div className="wwsc-container">
             <div className="text-container">
-                <img src="/WWSC logo_ltr_head.png" alt="wwsc logo" />
+                <img src="/WWSC logo_ltr_head.png" alt="wwsc logo" className="logo-img"/>
                 {lang === "en" && (
-                    <div>
+                    <>
                         <h1>{t("mission.title")}</h1>
 
                         <p>
@@ -30,10 +30,10 @@ export default function Mission() {
                         </p>
 
                         <div className="signature">World Wiser Sport Committee</div>
-                    </div>
+                    </>
                 )}
-                {lang === "zhHant" && (
-                    <div>
+                {lang === "zh-TW" && (
+                    <>
                         <h1>{t("mission.title")}</h1>
 
                         <p>
@@ -41,10 +41,10 @@ export default function Mission() {
                         </p>
 
                         <div className="signature">世界Wiser運動委員會</div>
-                    </div>
+                    </>
                 )}
-                {lang === "zhHans" && (
-                    <div>
+                {lang === "zh-CN" && (
+                    <>
                         <h1>{t("mission.title")}</h1>
 
                         <p>
@@ -52,7 +52,7 @@ export default function Mission() {
                         </p>
 
                         <div className="signature">世界Wiser运动委员会</div>
-                    </div>
+                    </>
                 )}
             </div>
         </div>

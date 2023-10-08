@@ -3,7 +3,7 @@
 import "./Privacy.css";
 import { useTranslation } from "react-i18next";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Privacy() {
     const { i18n } = useTranslation("global");
@@ -13,17 +13,17 @@ export default function Privacy() {
 
     return (
         <div className="wwsc-container">
-            <div className="image-container">
-                <img src="/assets/other/Privacy-Policy.jpg" alt="privacy policy" />
+            <div className="privacy-image-container">
+                <img src="/assets/other/Privacy-Policy.jpg" alt="privacy policy" className="responsive"/>
             </div>
             {lang === "en" && (
                 <div className="img-text-container">
-                    <h2 className="privacy-title">PRIVACY POLICY</h2>
-                    <p className="privacy-date">Last Edited on <strong>11/08/2014</strong></p>
+                    <h1>PRIVACY POLICY</h1>
+                    <p className="privacy-date no-ident">Last Edited on <strong>11/08/2014</strong></p>
                     <div className="w3-section">
                         <p>
                             <strong>
-                                The World Wiser Sport Committee (“WWSC”) is committed to protecting your privacy.
+                            The World Wiser Sport Committee (“WWSC”) is committed to protecting your privacy.
                             </strong>
                             This privacy policy has been compiled to better serve those who are concerned with how their
                             “personally identifiable information” is being used online. Please read our privacy policy
@@ -31,9 +31,9 @@ export default function Privacy() {
                             your personally identifiable information in accordance with our website.
                         </p>
                     </div>
-                    <h4>I. TYPES OF INFORMATION WE COLLECT</h4>
+                    <h3>I. TYPES OF INFORMATION WE COLLECT</h3>
                     <p>We collect the following two basic types of information:</p>
-                    <h5>(1) Personally identifiable information</h5>
+                    <h4>(1) Personally identifiable information</h4>
                     <p>
                         Personally identifiable information, as used in US privacy law and information security, is the
                         information that can be used on its own or with other information to identify, contact, or
@@ -53,7 +53,7 @@ export default function Privacy() {
                         residence and zip/postal code), your email address, your telephone numbers, your gender,
                         username and password.
                     </p>
-                    <h5>(2) Aggregate information</h5>
+                    <h4>(2) Aggregate information</h4>
                     <p>
                         Aggregate information means information about groups or categories of users, which does not
                         identify and cannot reasonably be used to identify an individual user.
@@ -71,12 +71,12 @@ export default function Privacy() {
                         individually identifiable information related to this data will never be used in any way other
                         than the usage stated above without your explicit permission.
                     </p>
-                    <h4>II. WHEN DO WE COLLECT INFORMATION?</h4>
+                    <h3>II. WHEN DO WE COLLECT INFORMATION?</h3>
                     <p>
                         We collect information from you when you register on our site, subscribe to a newsletter, fill
                         out a form or enter information on our site.
                     </p>
-                    <h4>III. HOW DO WE USE YOUR INFORMATION?</h4>
+                    <h3>III. HOW DO WE USE YOUR INFORMATION?</h3>
                     <p>
                         We may use the information we collected from you when you register, sign up for our newsletter,
                         respond to a communication, surf the website, or use certain other site features in the
@@ -88,7 +88,7 @@ export default function Privacy() {
                         To allow us to better serve you in responding to your customer service requests. To send
                         periodic emails regarding our services.
                     </p>
-                    <h5>(1) Confidentiality and Third Party Disclosure</h5>
+                    <h4>(1) Confidentiality and Third Party Disclosure</h4>
                     <p>
                         User’s records are regarded as confidential information and therefore will not be divulged to
                         any third party; however, we may have to disclose such information if legally required to do so
@@ -103,7 +103,7 @@ export default function Privacy() {
                         our services. Where appropriate, we shall issue users with appropriate written information,
                         handouts or copies of records as part of an agreed contract, for the benefit of both parties.
                     </p>
-                    <h5>(2) Third Party Links</h5>
+                    <h4>(2) Third Party Links</h4>
                     <p>
                         Occasionally, at our discretion, we may include or offer third party products or services on our
                         website. These third party sites have separate and independent privacy policies. We therefore
@@ -111,7 +111,7 @@ export default function Privacy() {
                         Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these
                         third party sites.
                     </p>
-                    <h4>IV. HOW DO WE PROTECT VISITOR INFORMATION?</h4>
+                    <h3>IV. HOW DO WE PROTECT VISITOR INFORMATION?</h3>
                     <p>
                         Your personally identifiable information is password protected, and any personally identifiable
                         information you provide to the website is protected from unauthorized disclosure by reasonable
@@ -119,7 +119,7 @@ export default function Privacy() {
                         encryption technology. We recommend that you do not divulge your password to anyone. At no time
                         will anyone of the WWSC ask for your password via email.
                     </p>
-                    <h4>V. DO WE USE “COOKIE”?</h4>
+                    <h3>V. DO WE USE “COOKIE”?</h3>
                     <p>
                         A cookie is a small piece of text sent to your browser by a website you visit. It helps the
                         website to remember information about your visit, such as your preferred language and other
@@ -130,12 +130,12 @@ export default function Privacy() {
                         details for each visit. Cookies are used in some areas of our site to enable the functionality
                         of this area and ease of use for those people visiting.
                     </p>
-                    <h4> VI.NOTIFICATION OF CHANGES</h4>
+                    <h3> VI.NOTIFICATION OF CHANGES</h3>
                     <p>
                         The WWSC reserves the right to modify this Privacy Policy at any time. Please review this Policy
                         from time to time to ensure your familiarity with its terms.
                     </p>
-                    <h4>VII. CONTACTING US</h4>
+                    <h3>VII. CONTACTING US</h3>
                     <p>
                         If at any time you would like to unsubscribe from receiving future emails, you can follow the
                         instructions at the bottom of each email.
@@ -145,13 +145,13 @@ export default function Privacy() {
                         information below.
                     </p>
                     <div className="w3-section">
-                        <p style={{ fontWeight: "bold" }}>World Wiser Sport Committee</p>
+                        <p><strong>World Wiser Sport Committee</strong></p>
                         <p>709 E. Colorado Boulevard, Suite 270, Pasadena, CA 91101, USA</p>
                         <p>
-                            Web Address: <NavLink to="/">https://worldwisersport.org/</NavLink>
+                            Web Address: <Link to="/">https://worldwisersport.org/</Link>
                         </p>
                         <p>
-                            Email:<a href="mailto: info@worldwisersport.org">info@worldwisersport.org</a>
+                            Email:<a href="mailto: info@worldwisersport.org"> <em>info@worldwisersport.org</em></a>
                         </p>
                         <p>Tel: (626) 795-7485; </p>
                         <p className="w3-center w3-section">©2023 World Wiser Sport Committee. All Rights Reserved.</p>
@@ -160,8 +160,8 @@ export default function Privacy() {
             )}
             {lang === "zhHant" && (
                 <div className="text-container">
-                    <h2 className="privacy-title-zh">隱私權政策</h2>
-                    <p className="privacy-date">
+                    <h1>隱私權政策</h1>
+                    <p className="privacy-date no-ident">
                         最近一次修改日期:<strong>11/08/2014</strong>
                     </p>
                     <div className="w3-section">
@@ -173,7 +173,7 @@ export default function Privacy() {
                             我們編寫本隱私權政策的目的是希望為那些關心“個人身份識別資訊”如何在網上被使用的用戶們提供更佳的服務。請仔細地閱讀我們的隱私權政策以便清楚地了解我們的網站將如何收集、使用、保護或用其它方式來處理您的個人身份識別資訊。
                         </p>
                     </div>
-                    <h4>I. 我們收集的資訊類型</h4>
+                    <h3>I. 我們收集的資訊類型</h3>
                     <p>我們收集以下兩種基本類型的資訊：</p>
                     <h5>(1) 個人身份識別資訊</h5>
                     <p>
@@ -193,7 +193,7 @@ export default function Privacy() {
                         在法律的允許下，當您訪問我們的網站時候，我們可能會收集和處理您的所在位置資訊。這些資訊可能經由與我們網站互動交流的移動裝置或者根據您的IP位址獲得。我們將用收集到的IP位址來分析趨勢，管理網站，追踪用戶活動情形，和收集廣泛的人口統計綜合資訊。
                         IP位址並不連結到個人身份識別資訊的。另外，由於系統管理，偵測使用模式和排除故障的目的，我們的網站伺服器會自動地記錄標準瀏覽訊息，包括用戶瀏覽器類型，瀏覽次數或打開郵箱，URL請求和經由什麼網站介紹來到我們網站的相關資訊。這些資訊我們不會與第三方共享，僅在WWSC需要知道的基礎上使用。在未經您明確許可使用，任何數據中有相關的個人識別資訊，我們會以等同個人身份識別資訊的方式來處理。
                     </p>
-                    <h4>II. 我們何時收集您的信息?</h4>
+                    <h3>II. 我們何時收集您的信息?</h3>
                     <p>當您在我們的網站上註冊，訂閱電子報，填寫表格或在我們網站上輸入資料時，我們收集您的資訊。</p>
                     <h4>III. 我們如何使用您的信息?</h4>
                     <p>
@@ -204,18 +204,18 @@ export default function Privacy() {
                         提升我們的網站內容以便提供更好的服務。 • 為了讓我們能夠提供更好的服務來回應客戶的服務要求。
                         以便能定期發送關於我們服務的電子郵件。
                     </p>
-                    <h5>(1) 保密性和向第三方披露</h5>
+                    <h4>(1) 保密性和向第三方披露</h4>
                     <p>
                         用戶的記錄被視為機密，因此我們不會披露給任何第三方;但是如果是由於通過法律的要求，我們可能必須向有關當局披露被要求的資訊。
                         我們不會將您的個人資訊出售、分享或出租給任何第三方或使用您的電子郵箱來發送您不需要的郵件。我們只會根據您同意的服務條款來發送WWSC的郵件給您。
                         但這不包括我們的網站託管公司和協助我們運作我們的網站，推廣我們服務或為您提供服務的其他團體，只要這些公司和團體同意保密這些資訊。
                         當我們收到合理的要求通知後，每個用戶都有權利要求查看或複印我們保留他或她的任何所有記錄。用戶們也被要求保留與我們提供服務相關的任何文獻的複印件。在適當情況下，為了雙方的利益，我們也會提供用戶適當的書面資料，筆記或記錄副本作為協議契約的一部分。
                     </p>
-                    <h5>(2) 第三方鏈接</h5>
+                    <h4>(2) 第三方鏈接</h4>
                     <p>
                         有時候出於我們的決定考慮，我們可能在本網站包括或提供第三方產品或服務的鏈接。這些第三方網站有其分別和獨立的隱私權政策。因此，我們對這些鏈接網站的內容和活動，沒有任何法律上的責任或義務。但是儘管如此，為了保障我們網站的完整性，我們歡迎隨時向我們提供任何關於這些第三方鏈接網站的回饋。
                     </p>
-                    <h4>IV. 我們如何保護訪客的信息?</h4>
+                    <h3>IV. 我們如何保護訪客的信息?</h3>
                     <p>
                         您的個人身份識別資訊是有受密碼保護的，您提供的任何個人身份身份識別資訊給本網站時是由合理的技術措施保護，以防止未經授權的披露。然而資訊被提供給WWSC時並沒有通過SSL加密技術來傳輸。我們建議您不要將密碼洩露給任何人，在任何時候WWSC不會有任何人通過電子郵件向您要求提供密碼。
                     </p>
@@ -228,19 +228,19 @@ export default function Privacy() {
                         跟大多數互動式網站一樣，
                         WWSC網站使用cookie來獲取用戶每次訪問時的詳細信息，我們網站部分的網頁有使用Cookie，以啟動該方面的功能而方便讓造訪者更容易使用這些網頁的功能。
                     </p>
-                    <h4> VI.變更通知</h4>
+                    <h3> VI.變更通知</h3>
                     <p>WWSC保留隨時修改本隱私權政策的權利，請時常閱讀本政策和熟悉其中的條款。</p>
-                    <h4>VII. 聯絡我們</h4>
+                    <h3>VII. 聯絡我們</h3>
                     <p>如果在任何時候你想取消訂閱我們未來的電子郵件，您可以在每個郵件的底部按照說明步驟</p>
                     <p>如果有對本隱私政策有任何疑問，您可以使用下面的聯絡信息與我們聯繫。</p>
                     <div className="w3-section">
-                        <p style={{ fontWeight: "bold" }}>世界Wiser運動委員會 World Wiser Sport Committee</p>
+                        <p><strong>世界Wiser運動委員會 (World Wiser Sport Committee)</strong></p>
                         <p>709 E. Colorado Boulevard, Suite 270, Pasadena, CA 91101, USA</p>
                         <p>
-                            網址: <NavLink to="/">https://worldwisersport.org/</NavLink>
+                            網址: <Link to="/">https://worldwisersport.org/</Link>
                         </p>
                         <p>
-                            電子郵件信箱:<a href="mailto: info@worldwisersport.org">info@worldwisersport.org</a>
+                            電子郵件信箱:<a href="mailto: info@worldwisersport.org"> <em>info@worldwisersport.org</em></a>
                         </p>
                         <p>電話: (626) 795-7485; </p>
                         <p className="w3-center w3-section">© 2012-2023 本網站所有內容版權屬於世界Wiser運動委員會</p>
@@ -249,8 +249,8 @@ export default function Privacy() {
             )}
             {lang === "zhHans" && (
                 <div className="text-container">
-                    <h2 className="privacy-title-zh">隐私权政策</h2>
-                    <p className="privacy-date">
+                    <h1>隐私权政策</h1>
+                    <p className="privacy-date no-ident">
                         最近一次修改日期: <strong>11/08/2014</strong>
                     </p>
                     <div className="w3-section">
@@ -262,9 +262,9 @@ export default function Privacy() {
                             我们编写本隐私权政策的目的是希望为那些关心“个人身份识别资讯”如何在网上被使用的用户们提供更佳的服务。请仔细地阅读我们的隐私权政策以便清楚地了解我们的网站将如何收集、使用、保护或用其它方式来处理您的个人身份识别资讯。
                         </p>
                     </div>
-                    <h4>I. 我们收集的资讯类型</h4>
+                    <h3>I. 我们收集的资讯类型</h3>
                     <p>我们收集以下两种基本类型的资讯：</p>
-                    <h5>(1) 个人身份识别资讯</h5>
+                    <h4>(1) 个人身份识别资讯</h4>
                     <p>
                         当被使用在美国隐私法和资讯安全时，个人身份识别资讯是一种可以被单独使用或与其他资讯一起来识别，联繫，或者找到某一个人，或依其资讯背景可来识别某个个人。
                     </p>
@@ -323,13 +323,13 @@ export default function Privacy() {
                     <p>如果在任何时候你想取消订阅我们未来的电子邮件，您可以在每个邮件的底部按照说明步骤</p>
                     <p>如果有对本隐私政策有任何疑问，您可以使用下面的联络信息与我们联繫。</p>
                     <div className="w3-section">
-                        <p style={{ fontWeight: "bold" }}>世界Wiser运动委员会 World Wiser Sport Committee</p>
+                        <p><strong>世界Wiser运动委员会</strong> (World Wiser Sport Committee)</p>
                         <p>709 E. Colorado Boulevard, Suite 270, Pasadena, CA 91101, USA</p>
                         <p>
-                            网址: <NavLink to="/">https://worldwisersport.org/</NavLink>
+                            网址: <Link to="/">https://worldwisersport.org/</Link>
                         </p>
                         <p>
-                            电子邮件信箱:<a href="mailto: info@worldwisersport.org">info@worldwisersport.org</a>
+                            电子邮件信箱:<a href="mailto: info@worldwisersport.org"> <em>info@worldwisersport.org</em></a>
                         </p>
                         <p>电话: (626) 795-7485; </p>
                         <p className="w3-center w3-section">© 2012-2023 本网站所有内容版权属於世界Wiser运动委员会</p>

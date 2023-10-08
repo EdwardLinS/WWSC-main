@@ -1,31 +1,40 @@
-.grid-format {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
+/** @format */
 
-    border: black solid;
-    border-radius: 0.5vw;
-}
-
-.grid-format > * {
-    padding: 1.5vw;
+.w3-table table {
     width: 100%;
-    height: 100%;
-    border: black solid 0.05vw;
-
-    margin: 0;
 }
 
-.grid-format h1 {
-    font-weight: bold;
+.w3-table th {
+    padding: 0, 20px;
+    font-size: 1.45rem;
+    text-align: center;
+    color: teal;
 }
 
-.grid-format p {
-    font-size: 1.75rem;
-    line-height: 3rem;
+.w3-table tr {
+    padding: 30px;
 }
 
-.glossary-text {
-    font-size: 1.75rem;
+tr:nth-child(odd) {
+    background-color: #f6fff8;
+}
+
+.w3-table td {
+    /* vertical-align: center; */
+    font-size: 1.25rem;
+}
+.w3-table td:first-child {
+    font-size: 1.45rem;
+    font-weight: 600;
+    max-width: fit-content;
+    color: #d45b39;
+    width: 220px;
+    white-space: nowrap;
+    padding-right: 20px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.w3-container p .no-ident {
+    text-indent: 0;
 }

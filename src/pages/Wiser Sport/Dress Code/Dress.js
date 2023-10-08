@@ -36,7 +36,7 @@ export default function Dress() {
                 </div>
             )}
 
-            {lang === "zhHant" && (
+            {lang === "zh-TW" && (
                 <div className="img-text-container">
                     <h1>{t("dress_code.title")}</h1>
 
@@ -48,7 +48,7 @@ export default function Dress() {
                     </p>
                 </div>
             )}
-            {lang === "zhHans" && (
+            {lang === "zh-CN" && (
                 <div className="img-text-container">
                     <h1>{t("dress_code.title")}</h1>
                     <p>以上为球员们穿著Wiser球员运动装参加正式的Wiser运动竞赛</p>

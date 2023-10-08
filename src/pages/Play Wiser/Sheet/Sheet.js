@@ -4,8 +4,8 @@ export default function Sheet() {
 
     return (
         <div>
-            <div className="custom-container">
-                <div className="text">
+            <div className="wwsc-container">
+                <div className="img-text-container">
                     <h1>How to Record A Wiser Ball Game</h1>
                     <p>Please click the following link to download each pdf file.</p>
 

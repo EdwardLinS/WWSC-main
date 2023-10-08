@@ -1,12 +1,17 @@
 /** @format */
 
 import "./NewBread.css";
+import { useTranslation } from "react-i18next";
 
 import { useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 export default function NewBread() {
+
+    const { t, i18n } = useTranslation();
+
     const location = useLocation();
+    console.log(location);
     let currentLink = "";
 
     let crumbs = location.pathname
@@ -44,7 +49,7 @@ export default function NewBread() {
         <div>
             <BreadcrumbItem active>
                 <Link exact to={"/"} style={{ marginRight: "5px" }}>
-                    Home
+                    {t("navbar.home")}
                 </Link>
             </BreadcrumbItem>
         </div>

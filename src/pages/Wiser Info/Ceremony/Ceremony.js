@@ -43,8 +43,8 @@ export default function Ceremony() {
 
     return (
         <div>
-            <div className="custom-container">
-                <div className="text">
+            <div className="wwsc-container">
+                <div className="img-text-container">
                     <h1>World Wiser Sport Committee Holds Its First Inaugural Ceremony (03/02/2013)</h1>
                     <CustomTab content={content} />
                 </div>

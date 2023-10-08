@@ -1,0 +1,108 @@
+/* ===================TOP content======================== */
+.top-content {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #f6fff8;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1, solid grey;
+   
+}
+
+
+.header-text {
+    display: flex;
+    /* font-size: 1rem; */
+    color: var(--primary);
+    font-weight: 400;
+    /* flex-direction: column; */
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+    gap: 10px;
+    margin-right: 20px;
+    align-self: flex-start;
+    /* padding-left: 2vw; */
+}
+
+.header-text span{
+    font-size: 1.2rem;
+    margin-top: 4px;
+
+}
+
+
+.btn-signup {
+    color: teal;
+    background-color: #f6fff8;
+    border: 1px solid teal;
+    font-weight: 500;
+    padding: 0px 25px 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+    /* width: 270px; */
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-signup:hover {
+    color: white;
+    background-color: teal;
+    border: 1px solid teal;
+}
+
+.btn-login {
+    color: white;
+    background-color: teal;
+    border: 1px solid teal;
+    font-weight: 500;
+    /* width: 120px; */
+    padding: 0px 25px 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-text span .global-icon{
+    font-size: 1.2rem;
+}
+
+.btn-login:hover {
+    color: teal;
+    background-color: #f6fff8;
+    border: 1px solid teal;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 20px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
