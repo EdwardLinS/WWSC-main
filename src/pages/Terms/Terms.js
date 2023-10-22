@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export default function Terms() {
-    const { t, i18n } = useTranslation("global");
+    const { i18n } = useTranslation("global");
     const lang = i18n.language;
 
     return (
@@ -318,14 +318,18 @@ export default function Terms() {
                             Web Address: <Link to="/">https://worldwisersport.org/</Link>
                         </p>
                         <p>
-                            Email:<a href="mailto: info@worldwisersport.org"> <em>info@worldwisersport.org</em></a>
+                            Email:
+                            <a href="mailto: info@worldwisersport.org">
+                                {" "}
+                                <em>info@worldwisersport.org</em>
+                            </a>
                         </p>
                         <p>Tel: (626) 795-7485; </p>
                         <p className="w3-center w3-section">©2023 World Wiser Sport Committee. All Rights Reserved.</p>
                     </div>
                 </div>
             )}
-            {lang === "zhHant" && (
+            {lang === "zh-TW" && (
                 <div className="img-text-container">
                     <h1>網站使用條款與條件</h1>
                     <div className="w3-section">
@@ -478,39 +482,40 @@ export default function Terms() {
                     <div className="w3-section">
                         <h3>X. 變更通知</h3>
                         <p>
-                        WWSC保留在任何時間可自行決定變更本用戶協議中的任何條款與條件或本網站的任何政策或準則的權利。當我們作出變更時，我們將更新本用戶協議頂端的“最近更新”的日期。一旦公佈在本網站後，任何變更將立即生效。您在變更公佈後，繼續使用本網站將代表您接受我們的變更。我們鼓勵您在瀏覽本網站的任何時候都能查閱本用戶協議。
+                            WWSC保留在任何時間可自行決定變更本用戶協議中的任何條款與條件或本網站的任何政策或準則的權利。當我們作出變更時，我們將更新本用戶協議頂端的“最近更新”的日期。一旦公佈在本網站後，任何變更將立即生效。您在變更公佈後，繼續使用本網站將代表您接受我們的變更。我們鼓勵您在瀏覽本網站的任何時候都能查閱本用戶協議。
                         </p>
                     </div>
                     <div className="w3-section">
                         <h3>XI. 聯繫信息</h3>
                         <p className="no-ident">
-                        我們的聯繫方式可在我們的網站上的 <Link to="/contact-us">聯繫我們</Link> 鏈接找到。
+                            我們的聯繫方式可在我們的網站上的 <Link to="/contact-us">聯繫我們</Link> 鏈接找到。
                         </p>
-                        <p className="no-ident">
-                        如果您對上述本網站的條款與條件有任何問題或意見，您可以聯繫我們：
-                        </p>
+                        <p className="no-ident">如果您對上述本網站的條款與條件有任何問題或意見，您可以聯繫我們：</p>
                     </div>
                     <div className="w3-section">
                         <p>
-                        <strong>世界Wiser運動委員會 (World Wiser Sport Committee)</strong>
+                            <strong>世界Wiser運動委員會 (World Wiser Sport Committee)</strong>
                         </p>
                         <p>709 E. Colorado Boulevard, Suite 270, Pasadena, CA 91101, USA</p>
                         <p>
                             Web Address: <Link to="/">https://worldwisersport.org/</Link>
                         </p>
                         <p>
-                            Email:<a href="mailto: info@worldwisersport.org"><em> info@worldwisersport.org</em></a>
+                            Email:
+                            <a href="mailto: info@worldwisersport.org">
+                                <em> info@worldwisersport.org</em>
+                            </a>
                         </p>
                         <p>Tel: (626) 795-7485; </p>
                         <p className="w3-center w3-section">©2023 所有版權為世界Wiser運動委員會所擁有。</p>
                     </div>
                 </div>
             )}
-            {lang === "zhHans" && (
-                <div className="img-text-container">
+            {lang === "zh-CN" && (
+                <div className="img-text-container" style={{ color: "teal" }}>
                     <h1>网站使用条款与条件</h1>
                     <div className="w3-section">
-                        <h3>I. 前言</h3>
+                        <h3 style={{ color: "teal" }}>I. 前言</h3>
                         <p>
                             欢迎您访问我们的网站 <Link to="/">https://worldwisersport.org/</Link>{" "}
                             (以下简称为“本网站”)，本网站是由<strong>世界Wiser运动委员会</strong>(英文名为World Wiser
@@ -659,28 +664,29 @@ export default function Terms() {
                     <div className="w3-section">
                         <h3>X. 变更通知</h3>
                         <p>
-                        WWSC保留在任何时间可自行决定变更本用户协议中的任何条款与条件或本网站的任何政策或準则的权利。当我们作出变更时，我们将更新本用户协议顶端的“最近更新”的日期。一旦公佈在本网站後，任何变更将立即生效。您在变更公佈後，继续使用本网站将代表您接受我们的变更。我们鼓励您在浏览本网站的任何时候都能查阅本用户协议。
+                            WWSC保留在任何时间可自行决定变更本用户协议中的任何条款与条件或本网站的任何政策或準则的权利。当我们作出变更时，我们将更新本用户协议顶端的“最近更新”的日期。一旦公佈在本网站後，任何变更将立即生效。您在变更公佈後，继续使用本网站将代表您接受我们的变更。我们鼓励您在浏览本网站的任何时候都能查阅本用户协议。
                         </p>
                     </div>
                     <div className="w3-section">
                         <h3>XI. 联繫信息</h3>
                         <p className="no-ident">
-                        我们的联繫方式可在我们的网站上的 <Link to="/contact-us">联繫我们</Link> 链接找到。
+                            我们的联繫方式可在我们的网站上的 <Link to="/contact-us">联繫我们</Link> 链接找到。
                         </p>
-                        <p className="no-ident">
-                        如果您对上述本网站的条款与条件有任何问题或意见，您可以联繫我们：
-                        </p>
+                        <p className="no-ident">如果您对上述本网站的条款与条件有任何问题或意见，您可以联繫我们：</p>
                     </div>
                     <div className="w3-section">
                         <p>
-                        <strong>世界Wiser运动委员会 (World Wiser Sport Committee)</strong>
+                            <strong>世界Wiser运动委员会 (World Wiser Sport Committee)</strong>
                         </p>
                         <p>709 E. Colorado Boulevard, Suite 270, Pasadena, CA 91101, USA</p>
                         <p>
                             Web Address: <Link to="/">https://worldwisersport.org/</Link>
                         </p>
                         <p>
-                            Email:<a href="mailto: info@worldwisersport.org"><em> info@worldwisersport.org</em></a>
+                            Email:
+                            <a href="mailto: info@worldwisersport.org">
+                                <em> info@worldwisersport.org</em>
+                            </a>
                         </p>
                         <p>Tel: (626) 795-7485; </p>
                         <p className="w3-center w3-section">©2023 所有版权为世界Wiser运动委员会所拥有。</p>

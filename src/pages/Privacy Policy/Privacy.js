@@ -158,7 +158,7 @@ export default function Privacy() {
                     </div>
                 </div>
             )}
-            {lang === "zhHant" && (
+            {lang === "zh-TW" && (
                 <div className="text-container">
                     <h1>隱私權政策</h1>
                     <p className="privacy-date no-ident">
@@ -247,7 +247,7 @@ export default function Privacy() {
                     </div>
                 </div>
             )}
-            {lang === "zhHans" && (
+            {lang === "zh-CN" && (
                 <div className="text-container">
                     <h1>隐私权政策</h1>
                     <p className="privacy-date no-ident">

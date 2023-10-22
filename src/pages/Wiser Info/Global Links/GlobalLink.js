@@ -218,9 +218,9 @@ export default function GlobalLink() {
 
     return (
         <div>
-            <div className="custom-container">
-                <div className="text">
-                    <h1><strong>Wiser Global Links</strong></h1>
+            <div className="wwsc-container">
+                <div className="img-text-container">
+                    <h1>Wiser Global Links</h1>
                     <p>If you would like to share your Wiser sport web sites, blogs, or other social networks (like Facebook, twitter, YouTube, etc.) with us here, please email their web links to World Wiser Sport Committee’s email address at <a href="info@worldwisersport.org">info@worldwisersport.org</a>.</p>
                     <CustomTab content={content} />
                 </div>

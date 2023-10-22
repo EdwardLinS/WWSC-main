@@ -1,28 +1,28 @@
 /** @format */
 
 .text-drop {
-    border: rgb(200, 200, 200) solid;
+    /* border: rgb(200, 200, 200) solid; */
     border-radius: 0.5vw;
 
     margin-top: 0vw;
+    /* margin-bottom: 8px; */
 }
 
 .text-drop button {
-    font-size: 20px;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
     /* font-weight: bold; */
     padding: 12px;
-    color: #d45b39;
+    color: tomato;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .text-drop p {
     padding-left: 2vw;
     padding-right: 1.5vw;
-    font-size: 18px;
+    /* font-size: 18px; */
+    text-indent: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .text-drop p img {

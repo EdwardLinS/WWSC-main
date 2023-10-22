@@ -2,10 +2,10 @@
 
 .footer {
     margin-top: 2rem;
-    font-family: "Roboto", sans-serif;
     width: 100%;
     height: auto;
     padding-top: 20px;
+    background-color: teal;
 }
 
 .social-icon {
@@ -82,11 +82,6 @@
     /* line-height: 2vw; */
     color: rgba(255, 255, 255, 0.639);
     /* margin-right: 0.5vw; */
-}
-
-.w3-theme-d5 {
-    color: #fff !important;
-    background-color: #031e1d !important;
 }
 
 @media screen and (max-width: 960px) {

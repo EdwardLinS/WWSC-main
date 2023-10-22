@@ -272,7 +272,7 @@ export default function Rules() {
     return (
         <div>
             <div className="wwsc-container">
-                <div className="img-text-container">
+                <div className="text-container">
                     <h1>{t("rule.title")}</h1>
                     {lang === "en" && <CustomTab content={content} />}
                     {lang === "zh-TW" && <CustomTab content={content_zh_TW} />}

@@ -1,51 +1,115 @@
 /** @format */
+import React from "react";
+import { useState, useEffect, useRef } from "react";
 
+// import style css file
 import "./TopBar.css";
 
-import React from "react";
-
 import { Link } from "react-router-dom";
-import { useState } from "react";
+
+// import UseTranslation hook
 import { useTranslation } from "react-i18next";
 
+//Create Topbar component
 export default function TopBar() {
-    const [language, setLanguage] = useState("en");
+    const languages = [
+        {
+            code: "en",
+            name: "English",
+        },
+        {
+            code: "zh-TW",
+            name: "繁體中文",
+        },
+        {
+            code: "zh-CN",
+            name: "简体中文",
+        },
+    ];
+
+    const [open, setOpen] = useState(false);
+
+    let menuRef = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef.current.contains(e.target)) {
+                setOpen(false);
+                console.log(menuRef.current);
+            }
+        };
+
+        document.addEventListener("mousedown", handler);
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        };
+    });
+
     const { t, i18n } = useTranslation();
 
-    const handleChangeLanguage = (e) => {
-        const lang = e.target.value;
-        console.log(lang);
-        setLanguage(lang);
-        i18n.changeLanguage(lang);
-    };
-
     return (
-        <div className="top-content">
-            <div className="header-text">
-                <span className="global-icon">
-                    <i className="bi bi-globe"></i>
-                </span>
-                <select
-                    onChange={handleChangeLanguage}
-                    value={language}
-                    className="form-select"
-                    aria-label={t("header.select_language")}
-                    style={{ width: "140px", backgroundColor: "white", color: "#073b3a", padding: "5px" }}
-                >
-                    <option selected value="en">
-                        English
-                    </option>
-                    <option value="zh-TW">中文繁體</option>
-                    <option value="zh-CN">中文简体</option>
-                </select>
-                <button className="btn-signup">
-                    <span>{t("header.signup")}</span>
-                </button>
-                <Link to="/referee-home">
-                    <button className="btn-login" style={{ "vertical-align": "middle" }}>
-                        <span>{t("header.login")}</span>
+        <div className="top-bar">
+            <div className="top-bar-left">
+                <div className="top-bar-title">
+                    <Link to="/">
+                        <img className="wwsc-small-logo" src="/WWSC-logo.png" alt="wwsc-small-logo" />
+                    </Link>
+                    <h2 style={{ color: "teal" }}>WWSC</h2>
+                </div>
+            </div>
+            <div className="top-bar-right">
+                <div className="lng-tooltip">{t("topbar.tool_tip")}</div>
+                <div className="lng-container" ref={menuRef}>
+                    <div
+                        className="select-container"
+                        onClick={() => {
+                            setOpen(!open);
+                        }}
+                    >
+                        <button className="lng-icon" type="button" style={{ color: "teal", fontSize: "1.6rem" }}>
+                            <i class="bi bi-translate"></i>
+                        </button>
+                    </div>
+                    <div className={`lng-dropdown-menu ${open ? "active" : "inactive"}`}>
+                        <ul>
+                            {languages.map(({ code, name }) => (
+                                <li
+                                    className="lng-dropdown-item"
+                                    key={code}
+                                    onClick={() => {
+                                        i18n.changeLanguage(code);
+                                        setOpen(!open);
+                                    }}
+                                >
+                                    {name}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="btns-container">
+                    <button className="btn-signup">
+                        <div className="btn-signup-content">
+                            <span classname="btn-signup-icon">
+                                <i class="bi bi-pencil-square" style={{ fontSize: "1.2rem" }}></i>
+                            </span>
+                            <span classname="btn-signup-text">{t("topbar.signup")}</span>
+                        </div>
                     </button>
-                </Link>
+
+                    <Link to="/referee-home">
+                        <button className="btn-login">
+                            <div className="btn-login-content">
+                                <span classname="btn-login-icon">
+                                    <i class="bi bi-person-badge-fill" style={{ fontSize: "1.2rem" }}></i>
+                                </span>
+                                <span classname="btn-login-text"> {t("topbar.login")}</span>
+                            </div>
+                        </button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

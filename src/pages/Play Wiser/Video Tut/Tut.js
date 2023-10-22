@@ -143,7 +143,7 @@ export default function Tut({ history }) {
     const youtubeContent_zh_TW = (
         <div className="video-container">
             <div className="video-item">
-                <h3>YouTube—教學視頻完整版本鍵結：</h3>
+                <h3>教學視頻完整版本鍵結：</h3>
                 <a href="http://youtu.be/qlelOHIrPp0">http://youtu.be/qlelOHIrPp0</a>
                 <div className="video-content">
                     <iframe
@@ -159,7 +159,7 @@ export default function Tut({ history }) {
             </div>
             <hr />
             <div className="video-item">
-                <h3>YouTube—教學視頻第一部份鍵結：</h3>
+                <h3>教學視頻第一部份鍵結：</h3>
                 <a href="http://youtu.be/d_SDxe6nWv0">http://youtu.be/d_SDxe6nWv0</a>
                 <div className="video-content">
                     <iframe
@@ -175,7 +175,7 @@ export default function Tut({ history }) {
             </div>
             <hr />
             <div className="video-item">
-                <h3>YouTube—教學視頻第二部份鍵結：</h3>
+                <h3>教學視頻第二部份鍵結：</h3>
                 <a href="http://youtu.be/tcVat_bL3XI">http://youtu.be/tcVat_bL3XI</a>
                 <div className="video-content">
                     <iframe
@@ -191,7 +191,7 @@ export default function Tut({ history }) {
             </div>
             <hr />
             <div className="video-item">
-                <h3>YouTube—教學視頻第三部份鍵結：</h3>
+                <h3>教學視頻第三部份鍵結：</h3>
                 <a href="http://youtu.be/gAXjZ6DbPYA">http://youtu.be/gAXjZ6DbPYA</a>
                 <div className="video-content">
                     <iframe
@@ -207,7 +207,7 @@ export default function Tut({ history }) {
             </div>
             <hr></hr>
             <div className="video-item">
-                <h3>YouTube—教學視頻第四部份鍵結：</h3>
+                <h3>教學視頻第四部份鍵結：</h3>
                 <a href="http://youtu.be/IzLihsf5S-E">http://youtu.be/IzLihsf5S-E</a>
                 <div className="video-content">
                     <iframe
@@ -273,7 +273,7 @@ export default function Tut({ history }) {
     const youtubeContent_zh_CN = (
         <div className="video-container">
             <div className="video-item">
-                <h3>YouTube—教学视频完整版本键结：</h3>
+                <h3>教学视频完整版本键结：</h3>
                 <a href="http://youtu.be/qlelOHIrPp0">http://youtu.be/qlelOHIrPp0</a>
                 <div className="video-content">
                     <iframe
@@ -289,7 +289,7 @@ export default function Tut({ history }) {
             </div>
             <hr />
             <div className="video-item">
-                <h3>YouTube—教学视频第一部份键结：</h3>
+                <h3>教学视频第一部份键结：</h3>
                 <a href="http://youtu.be/d_SDxe6nWv0">http://youtu.be/d_SDxe6nWv0</a>
                 <div className="video-content">
                     <iframe
@@ -305,7 +305,7 @@ export default function Tut({ history }) {
             </div>
             <hr />
             <div className="video-item">
-                <h3>YouTube—教学视频第二部份键结：</h3>
+                <h3>教学视频第二部份键结：</h3>
                 <a href="http://youtu.be/tcVat_bL3XI">http://youtu.be/tcVat_bL3XI</a>
                 <div className="video-content">
                     <iframe
@@ -321,7 +321,7 @@ export default function Tut({ history }) {
             </div>
             <hr />
             <div className="video-item">
-                <h3>YouTube—教学视频第叁部份键结：</h3>
+                <h3>教学视频第叁部份键结：</h3>
                 <a href="http://youtu.be/gAXjZ6DbPYA">http://youtu.be/gAXjZ6DbPYA</a>
                 <div className="video-content">
                     <iframe
@@ -337,7 +337,7 @@ export default function Tut({ history }) {
             </div>
             <hr></hr>
             <div className="video-item">
-                <h3>YouTube—教学视频第四部份键结：</h3>
+                <h3>教学视频第四部份键结：</h3>
                 <a href="http://youtu.be/IzLihsf5S-E">http://youtu.be/IzLihsf5S-E</a>
                 <div className="video-content">
                     <iframe

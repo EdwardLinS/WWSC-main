@@ -3,6 +3,12 @@
         "title": "世界WISER运动委员会"
     },
 
+    "topbar": {
+        "tool_tip": "选择语言:",
+        "signup": "登录",
+        "login": "登入"
+    },
+
     "header": {
         "title": "世界WISER运动委员会",
         "subtitle": "Wiser球(高智尔球)官方网站",
@@ -37,7 +43,7 @@
         "wi_subtitle_2": "通知",
         "wi_subtitle_3": "活动讯息",
         "wi_subtitle_4": "全球网路链接",
-        "referee_system": "裁判員登录系统",
+        "referee_system": "裁判員系统",
         "contact_us": "联络我们"
     },
     "intro": {
@@ -65,17 +71,29 @@
         "content_flags_spec": "旗子的规格和尺寸 (测量单位 ft. 为英呎的英文字feet的缩写)",
         "content_rope_spec": "(测量单位 m 为米或公尺的英文字meter的缩写)"
     },
-    "terms":{
+    "terms": {
         "title": "常用Wiser运动专业术语",
         "tab_rule": "于规则手册中出现顺序",
         "tab_abc": "英文字母顺序"
-
-
     },
-    "video_tutorial":{
+    "video_tutorial": {
         "title": "教学视频: 如何打Wiser球"
-        
     },
+    "ceremony": {
+        "title": "WWSC 第一届人员就职典礼 (03/02/2013)",
+        "tab_1": "新闻发佈",
+        "tab_2": "新闻报导",
+        "tab_3": "电视报导"
+    },
+
+    "notice": {
+        "title": "WWSC 通知",
+        "post":"刊登于",
+        "notice": " WWSC通知",
+        "more":"阅读更多内容....",
+        "load":"通知下载中..."
+    },
+
     "contact_us": {
         "img_caption": "WWSC 总部办公室外观"
     },

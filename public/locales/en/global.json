@@ -3,13 +3,16 @@
         "title": "World Wiser Sport Committee"
     },
 
+    "topbar": {
+        "tool_tip": "Select Lanuage:",
+        "signup": "SIGN-UP",
+        "login": "LOGIN"
+    },
+
     "header": {
         "title": "World Wiser Sport Committee",
         "subtitle": "Offical Web Site of Wiser Ball",
-        "slogan": "Play 'Wiser' & Get Wiser",
-        "signup": "Signup",
-        "login": "Login",
-        "language_select": "Select Language"
+        "slogan": "Play 'Wiser' & Get Wiser"
     },
 
     "routes": {
@@ -74,17 +77,29 @@
         "content_rope_spec": "(m: meter)"
     },
 
-    "terms":{
+    "terms": {
         "title": "Common Terminologies of Wiser Sport",
         "tab_rule": "Orders in Rules Handbook",
         "tab_abc": "Alphabetical Order"
-
-
     },
 
-    "video_tutorial":{
+    "video_tutorial": {
         "title": "Video Tutorial: How to Play Wiser Ball"
-        
+    },
+
+    "ceremony": {
+        "title": "WWSC Holds Its First Inaugural Ceremony (03/02/2013)",
+        "tab_1": "Press Release",
+        "tab_2": "News Reports",
+        "tab_3": "TV Reports"
+    },
+
+    "notice": {
+        "title": "WWSC Notices",
+        "post":"Posted on",
+        "notice": "by WWSC in notice",
+        "more":"Read more....",
+        "load":"Loading notices..."
     },
 
     "contact_us": {

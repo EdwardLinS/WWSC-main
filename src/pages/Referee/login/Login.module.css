@@ -47,11 +47,13 @@
     border-bottom: 1px solid lightgray;
     padding: 5px 200px;
     background-color: #073b3a18;
+    color:teal;
 }
 
 .login-form h2 {
     font-size: 18px;
-    color: #0e6362d9;
+    color: teal;
+    padding-bottom: 15px;
 }
 
 .login-form label {
@@ -91,7 +93,7 @@
     width: 200px;
     height: 40px;
     border: none;
-    background-color: #073b3a;
+    background-color: teal;
     color: white;
     font-weight: bold;
     margin-bottom: 10px;

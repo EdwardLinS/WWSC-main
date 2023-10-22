@@ -9,14 +9,14 @@ import {
 } from 'reactstrap';
 
 import './CustomTab.css'
-import { teal } from '@mui/material/colors';
+// import { teal } from '@mui/material/colors';
 
 export default function CustomTab({content}) {
 
     const [activeTab, setActiveTab] = useState("1");
 
     return (
-        <div className=''>
+        <div className='wwsc-tab'>
             <Nav tabs>
                 {content.map((elem, ind) => (
                     <NavItem >

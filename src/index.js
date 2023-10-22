@@ -12,10 +12,15 @@ import "./i18n";
 import { AuthContextProvider } from "./context/AuthContext";
 
 const root = createRoot(document.getElementById("root"));
+const loadingMarkup = (
+    <div className="py-4 text-center">
+        <h3>Loading...</h3>
+    </div>
+);
 
 root.render(
     <React.StrictMode>
-        <Suspense fallback="loading">
+        <Suspense fallback={loadingMarkup}>
             <AuthContextProvider>
                 <App />
             </AuthContextProvider>

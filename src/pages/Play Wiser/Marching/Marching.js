@@ -12,10 +12,10 @@ export default function Marching() {
         <div>
             <div className="wwsc-container">
                 {lang === "en" && (
-                    <div className="img-text-container march">
+                    <div className="text-container">
                         <h1 style={{ marginTop: "24px" }}>WWSC Demo Video (Marching/Etiquette/Interception)</h1>
-                        <div className="video-container">
-                            <div className="video-item">
+                        <div className="march-video-container">
+                            <div className="march-video-item">
                                 <p style={{ textIndent: "0px", textAlign: "left" }}>
                                     The World Wiser Sport Committee created this video to demonstrate:
                                 </p>
@@ -25,7 +25,7 @@ export default function Marching() {
                                     (3) How to Perform an “Interception” during Wiser ball games?
                                 </p>
                             </div>
-                            <div className="video-content">
+                            <div className="march-video-content">
                                 <iframe
                                     width="760"
                                     height="515"
@@ -40,10 +40,10 @@ export default function Marching() {
                     </div>
                 )}
                 {lang === "zh-TW" && (
-                    <div className="img-text-container march">
+                    <div className="text-container">
                         <h1 style={{ marginTop: "24px" }}>WWSC 示範視頻（正步/禮儀/攔擊）</h1>
-                        <div className="video-container">
-                            <div className="video-item">
+                        <div className="march-video-container">
+                            <div className="march-video-item">
                                 <p style={{ textIndent: "0px", textAlign: "left" }}>
                                     The 世界Wiser運動委員會製作以下的視頻是用來示範:
                                 </p>
@@ -51,7 +51,7 @@ export default function Marching() {
                                 <p style={{ textIndent: "1rem" }}>(2) Wiser運動球隊的正規禮節（行禮）;</p>
                                 <p style={{ textIndent: "1rem" }}>(3) 如何進行“攔擊”。</p>
                             </div>
-                            <div className="video-content">
+                            <div className="march-video-content">
                                 <iframe
                                     width="760"
                                     height="515"
@@ -66,10 +66,10 @@ export default function Marching() {
                     </div>
                 )}
                 {lang === "zh-CN" && (
-                    <div className="img-text-container march">
+                    <div className="text-container march">
                         <h1 style={{ marginTop: "24px" }}>WWSC 示範视频（正步/礼仪/拦击）</h1>
-                        <div className="video-container">
-                            <div className="video-item">
+                        <div className="march-video-container">
+                            <div className="march-video-item">
                                 <p style={{ textIndent: "0px", textAlign: "left" }}>
                                     The 世界Wiser运动委员会製作以下的视频是用来示範:
                                 </p>
@@ -77,7 +77,7 @@ export default function Marching() {
                                 <p style={{ textIndent: "1rem" }}>(2) Wiser运动球队的正规礼节（行礼）;</p>
                                 <p style={{ textIndent: "1rem" }}>(3) 如何进行“拦击”。</p>
                             </div>
-                            <div className="video-content">
+                            <div className="march-video-content">
                                 <iframe
                                     width="760"
                                     height="515"

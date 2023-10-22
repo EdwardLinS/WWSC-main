@@ -1,60 +1,89 @@
 /** @format */
 
-.navbar {
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%; */
-    /* height: 100px; */
-    padding: 5px;
-    /* z-index: 1; */
+.wwsc-navbar {
     box-shadow: 0 0.3vw 0.3vw 0 rgba(150, 150, 150, 0.2);
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    background-color: teal;
 }
 
 .navbar-container {
+    /* flex: 70%; */
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 0;
-    /* width: 100%;
-    height: 2vw; */
+    gap: 0.8rem;
 
-    /* max-width: 100vw; */
+    height: 60px;
 }
 
-a.dropdown-link {
-    font-family: "Roboto", sans-serif;
-    font-size: clamp(1rem, 0.3571rem + 0.7143vw, 1.25rem);
-    cursor: pointer;
-    text-decoration: none;
-    /* background-color: #28c7c5ed */
-}
-
-a.dropdown-link.active {
-    border-right: 1px solid #368786ed;
-}
-
-.custom-link {
-    padding: 0.35vw 3vw 0.35vw 3vw;
-    text-align: center;
-
-    width: 100%;
-
+.top-nav-item {
     color: white;
-
-    /* border-radius: 0.25vw; */
+    text-decoration: none;
+    text-align: center;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    white-space: nowrap;
+    padding: 5px 15px;
+  
 }
 
-@media screen and (max-width: 960px) {
+.top-nav-item:hover {
+    background-color: lightseagreen;
+    border-radius: 8px;
+}
+
+.top-nav-item.active {
+    border-bottom: 5px solid tomato;
+    text-decoration: none;
+    cursor: none;
+    /* padding: 10px 10px; */
+    transition: 500ms ease;
+    color: white;
+    background-color: none;
+}
+
+ul.dropdown-menu.show {
+    border: 1px solid lightseagreen;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid lightseagreen;
+    color: white;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    white-space: nowrap;
+    padding: 5px 15px;
+}
+
+.dropdown-item:hover {
+    /* text-decoration: underline; */
+    background-color: lightseagreen;
+    color: white;
+}
+
+.dropdown-item.active {
+    background-color: teal;
+    border-bottom: 5px solid tomato;
+    text-decoration: none;
+    cursor: none;
+}
+
+.nav-btn {
+    color: white;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    cursor: pointer;
+    /* visibility: hidden;
+    opacity: 0; */
+}
+
+@media screen and (max-width: 992px) {
     .navbar-container {
         flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
+        height: fit-content;
     }
 }

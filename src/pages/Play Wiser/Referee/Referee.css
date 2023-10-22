@@ -1,3 +1,10 @@
-.referee-header {
+/* .referee-header {
     padding-bottom: 1vw;
+} */
+
+
+
+.referee-grade-list li{
+    color:teal;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25r);
 }

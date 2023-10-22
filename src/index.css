@@ -6,7 +6,7 @@
 :root {
     /* Variables */
     --primary: teal;
-    --secondary: #d77d12;
+    --secondary: tomato;
     --bg-color: #f6fff8;
 }
 
@@ -36,11 +36,16 @@ h3,
 h4,
 h5,
 h6 {
-    color: #d45b39;
+    color: tomato;
+}
+
+h3,
+h4 {
+    color: tomato;
 }
 
 h1 {
-    color: #d45b39;
+    color: tomato;
     margin-top: 10px;
     margin-bottom: 1vw;
     font-size: clamp(1.8rem, 1.534rem + 0.8511vw, 2.3rem);
@@ -51,12 +56,15 @@ h1 {
 }
 
 p {
-    font-size: (1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+    /* font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem); */
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
     line-height: 2;
+    color: teal;
 }
 
 a {
     text-decoration: none;
+    color: teal;
 }
 
 a:hover {
@@ -80,6 +88,9 @@ a:hover {
     flex-direction: column;
     /* justify-items: center; */
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 .image-container {
@@ -105,6 +116,8 @@ a:hover {
     padding: 1vw 4vw 2vw 4vw;
     margin-bottom: 20px;
     border: 1px solid lightgray;
+   
+
 
     /* line-height: 3rem; */
 }
@@ -121,44 +134,47 @@ a:hover {
 }
 
 .img-text-container h1 {
-    color: #d45b39;
+    color: tomato;
     margin-top: 10px;
     margin-bottom: 1vw;
     font-size: clamp(1.8rem, 1.534rem + 0.8511vw, 2.3rem);
     line-height: 2;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1.6;
 }
 
 .img-text-container p {
-    font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
     line-height: 2;
     text-align: justify;
-    text-indent: clamp(3rem, 1.9362rem + 3.4043vw, 5rem);
+    text-indent: 2.5em;
+    color: teal;
+    margin-bottom: 1rem;
 }
 
-.img-text-container .signature {
+.signature {
     color: teal;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2em;
     text-align: right;
     padding-top: 0.5vw;
     padding-bottom: 3vw;
 }
 
 .text-container h1 {
-    color: #d45b39;
+    color: tomato;
     margin-top: 10px;
     margin-bottom: 1vw;
-    font-size: 2.3rem;
-    line-height: 4rem;
+    font-size: clamp(1.8rem, 1.534rem + 0.8511vw, 2.3rem);
+    line-height: 2;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1.6;
 }
 
 .text-container p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
     line-height: 2.5rem;
     text-align: justify;
-    text-indent: 3rem;
+    text-indent: 2.5em;
+    margin-bottom: 1rem;
 }

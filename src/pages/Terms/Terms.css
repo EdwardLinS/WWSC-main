@@ -1,3 +1,9 @@
+h1, h2, h3, h4, h5, h6{
+    color:tomato;
+
+}
+
+
 .w3-section li {
     font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
     line-height: 2;
@@ -11,6 +17,7 @@
 
 .w3-section ol {
     padding-left: 4rem;
+    color: teal;
 }
 
 .w3-section .no-ident {

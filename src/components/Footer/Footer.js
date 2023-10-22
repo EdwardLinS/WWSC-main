@@ -20,7 +20,7 @@ export default function Footer() {
     ];
 
     return (
-        <div className="footer w3-theme-d4">
+        <div className="footer">
             <div>
                 <ul class="social-icon">
                     <li class="social-icon__item">

@@ -1,6 +1,10 @@
 /** @format */
 
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import cookies from "js-cookie";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import { useTranslation } from "react-i18next";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
@@ -42,21 +46,32 @@ import NoticePage from "./components/NoticePage/NoticePage";
 import Privacy from "./pages/Privacy Policy/Privacy";
 import Terms from "./pages/Terms/Terms";
 import GlobalLink from "./pages/Wiser Info/Global Links/GlobalLink";
-import NewBread from "./components/NewBread/NewBread";
+// import NewBread from "./components/NewBread/NewBread";
 import RefereeProfile from "./pages/Referee/RefereeProfile/RefereeProfile";
 import RefereeRecord from "./pages/Referee/RefereeRecord/RefereeRecord";
+import TopBar from "./components/TopBar/TopBar";
 
 function App() {
     const { t, i18n } = useTranslation("global");
+    const lang = i18n.language;
 
-    const currentLanguage = i18n.language;
+    const currentLanguage = cookies.get("i18next") || i18n.language || "en";
 
     useEffect(() => {
         console.log("Setting document title");
         document.title = t("document.title");
     }, [currentLanguage, t]);
 
-    const [url, setUrl] = useState(process.env.REACT_APP_WORDPRESS_API);
+    // const [url, setUrl] = useState(process.env.REACT_APP_WORDPRESS_API);
+    let url = process.env.REACT_APP_WORDPRESS_API;
+
+    if (lang === "zh-TW") {
+        url = process.env.REACT_APP_WORDPRESS_API_TW;
+    } else if (lang === "zh-CN") {
+        url = process.env.REACT_APP_WORDPRESS_API_CN;
+    } else {
+        url = process.env.REACT_APP_WORDPRESS_API;
+    }
 
     let { data: notices, isPending, error } = useFetch(url, { type: "GET" });
 
@@ -67,9 +82,10 @@ function App() {
             {authIsReady && (
                 <ParallaxProvider>
                     <BrowserRouter>
+                        <TopBar />
                         <Header />
                         <Navbar />
-                        <NewBread />
+                        {/* <NewBread /> */}
                         <Routes>
                             <Route exact path="/" Component={Landing} />
                             <Route path="/wwsc-privacy-policy" element={<Privacy />} />

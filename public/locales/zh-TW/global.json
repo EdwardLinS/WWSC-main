@@ -2,6 +2,13 @@
     "document": {
         "title": "世界WISER運動委員會"
     },
+
+    "topbar":{
+        "tool_tip": "選擇語言:",
+        "signup": "登錄",
+        "login": "登入"
+
+    },
     "header": {
         "title": "世界WISER運動委員會",
         "subtitle": "Wiser球（高智爾球）官方網站",
@@ -40,7 +47,7 @@
         "wi_subtitle_2": "通知",
         "wi_subtitle_3": "活動訊息",
         "wi_subtitle_4": "全球網路鏈接",
-        "referee_system": "裁判員登錄系統",
+        "referee_system": "裁判員系統",
         "contact_us": "聯絡我們"
     },
     "intro": {
@@ -78,6 +85,21 @@
     "video_tutorial":{
         "title": "教學視頻: 如何打Wiser球"
         
+    },
+
+    "ceremony": {
+        "title": "WWSC 第一屆人員就職典禮 (03/02/2013)",
+        "tab_1":"新聞發佈",
+        "tab_2":"新聞報導",
+        "tab_3":"電視報導"
+    },
+
+    "notice": {
+        "title": "WWSC 通知",
+        "post":"刊登于",
+        "notice": " WWSC 通知",
+        "more":"閱讀更多内容....",
+        "load":"通知下載中..."
     },
 
     "contact_us": {

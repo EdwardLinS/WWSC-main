@@ -13,17 +13,17 @@ export default function CustomDrop({ title, link, linkList, drop, caret = true }
 
     return (
         <div>
-            <Dropdown className="dropdown" isOpen={open} onMouseEnter={toggle} onMouseLeave={toggle} toggle={toggle}>
-                <DropdownToggle caret={caret} className="toggle" size="xlg" color="">
-                    <NavLink exact to={link} className="dropdown-link">
+            <Dropdown className="nav-dropdown" isOpen={open} onMouseEnter={toggle} onMouseLeave={toggle} toggle={toggle}>
+                <DropdownToggle caret={caret} className="nav-dropdown-toggle" size="xlg" color="">
+                    <NavLink exact to={link} className="nav-dropdown-link">
                         {title}
                     </NavLink>
                 </DropdownToggle>
                 {drop && (
-                    <DropdownMenu className="dropdown-menu">
+                    <DropdownMenu className="nav-dropdown-menu">
                         {linkList.map((elem) => (
-                            <DropdownItem className="dropdown-item" style={{width: "100%"}}>
-                                <NavLink exact to={elem.link} className="dropdown-link">
+                            <DropdownItem className="nav-dropdown-item" style={{ width: "100%" }}>
+                                <NavLink exact to={elem.link} className="nav-dropdown-link">
                                     {elem.title}
                                 </NavLink>
                             </DropdownItem>

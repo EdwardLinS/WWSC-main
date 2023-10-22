@@ -1,68 +1,199 @@
-/* ===================TOP content======================== */
-.top-content {
-    overflow: hidden;
+/**
+ * ===================TOP content========================
+ 
+ * @format
+ */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #f6fff8;
+    background-color: var(--bg-color);
+
     padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-right: 12px;
+    margin-bottom: 12px;
     border-bottom: 1, solid grey;
-   
+    box-shadow: 0px 4px 4px 0px rgba(230, 230, 230, 0.05);
 }
 
-
-.header-text {
+.top-bar-left {
     display: flex;
-    /* font-size: 1rem; */
-    color: var(--primary);
-    font-weight: 400;
-    /* flex-direction: column; */
-    justify-content: flex-end;
-    /* align-items: flex-start; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.top-bar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    margin-right: 20px;
-    align-self: flex-start;
-    /* padding-left: 2vw; */
+    padding-left: 20px;
+    visibility: hidden;
 }
 
-.header-text span{
+.wwsc-small-logo {
+    width: 50px;
+}
+
+.top-bar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.lng-tooltip {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    color: teal;
+}
+
+.lng-container {
+    display: flex;
+    color: teal;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    padding-left: 0px;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.lng-icon {
+    border: 0;
+    color: teal;
+    background-color: var(--bg-color);
+    cursor: none;
+    padding-left: 0;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    height: 37px;
+    position: relative;
+    margin-left: 0;
+}
+
+.lng-dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 270px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: fit-content;
+    box-shadow: 0px 4px 4px 0px rgba(230, 230, 230, 0.05);
+}
+
+.lng-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 40px;
+    height: 20px;
+    width: 20px;
+    background: teal;
+    transform: rotate(45deg);
+}
+
+.lng-dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 500ms ease;
+}
+
+.lng-dropdown-menu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: 500ms ease;
+}
+
+.lng-dropdown-menu ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.lng-dropdown-menu li {
+    padding: 5px 0px;
+    text-align: center;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.05); */
+}
+
+.lng-dropdown-menu ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid tomato;
+    /* background-color: rgba(9, 175, 175, 0.793); */
+}
+
+.lng-dropdown-menu ul li:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.lng-dropdownItem {
+    display: flex;
+    /* margin: 5px auto; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ============Sing-up and Login button========== */
+
+.btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     font-size: 1.2rem;
-    margin-top: 4px;
-
+    /* margin-top: 4px; */
 }
 
-
-.btn-signup {
+.btns-container .btn-signup {
     color: teal;
     background-color: #f6fff8;
     border: 1px solid teal;
-    font-weight: 500;
-    padding: 0px 25px 5px 25px;
+    padding: 5px 25px 5px 25px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     font-size: 1rem;
     border-radius: 5px;
     /* width: 270px; */
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 4px 4px 0px rgba(230, 230, 230, 0.05);
 }
 
-.btn-signup:hover {
+.btns-container .btn-signup:hover {
     color: white;
     background-color: teal;
     border: 1px solid teal;
 }
 
-.btn-login {
+.btns-container .btn-login {
     color: white;
     background-color: teal;
     border: 1px solid teal;
-    font-weight: 500;
+    /* font-weight: 500; */
     /* width: 120px; */
-    padding: 0px 25px 5px 25px;
+    padding: 5px 25px 5px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -70,39 +201,74 @@
     border-radius: 5px;
     transition: all 0.5s;
     cursor: pointer;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 4px 4px 0px rgba(230, 230, 230, 0.05);
 }
 
-.header-text span .global-icon{
-    font-size: 1.2rem;
-}
-
-.btn-login:hover {
+.btns-container .btn-login:hover {
     color: teal;
     background-color: #f6fff8;
     border: 1px solid teal;
 }
 
-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-button span:after {
-    content: "\00bb";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+.btn-login-content,
+.btn-signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-button:hover span {
-    padding-right: 20px;
-}
+/* MEDIA QUERY */
 
-button:hover span:after {
-    opacity: 1;
-    right: 0;
+@media screen and (max-width: 992px) {
+    .top-bar-title {
+        visibility: visible;
+    }
+
+
+    .top-bar-right {
+
+        gap: 10px;
+    }
+
+    .lng-container {
+       
+     
+        padding-left: 0px;
+    }
+
+    .lng-tooltip {
+        visibility: hidden;
+    }
+
+    .lng-dropdown-menu {
+        /* position: absolute; */
+        top: 60px;
+        right: 215px;
+       
+    }
+
+    .btns-container {
+        gap: 5px;
+        font-size: 1rem;
+        /* margin-top: 4px; */
+    }
+
+    .btns-container .btn-signup {
+        border: 0;
+        padding: 5px 15px 5px 15px;
+        font-size: 0.9rem;
+    }
+
+    .btns-container .btn-signup:hover {
+        color: white;
+        background-color: teal;
+        border: 1px solid teal;
+    }
+
+    .btns-container .btn-login {
+        border: 0;
+        padding: 5px 15px 5px 15px;
+        font-size: 0.9rem;
+    }
 }

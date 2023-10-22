@@ -1,82 +1,130 @@
+/** @format */
+
 .load {
     font-size: 2rem;
     padding-top: 3rem;
 }
 
-.by {
+.notice-info {
     text-align: right;
     color: gray;
+    font-size: 0.8rem;
 }
 
 .read-link {
     font-size: 1.5rem;
 }
 
-.content {
+.notice-content {
     margin-top: 1vw;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
     line-height: 3rem;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 
-.notice {
+/* .notice {
     display: flex;
     flex-direction: row-reverse;
-    justify-content:center;
+    justify-content: center;
     align-items: baseline;
 
-    gap: 3rem;
+    gap: 2rem;
 
     width: 100%;
 
     padding-right: 15rem;
-}
+} */
 
 .notice-container {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.notice-list {
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+p .read-more-link {
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    line-height: 2;
+    color: teal;
+    text-align: right;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+/*============== NOTICE SIDEBAR ================*/
+.notice-sidebar {
+    flex: 25%;
+    min-height: 100vh;
+    margin-top: 52px;
+
+    background-color: #f6fff8;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-radius: 5px;
+}
+
+.notice-sidebar h3 {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 2rem;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-color: lightseagreen;
+    color: #efefef;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0;
+}
+
+.recent-notice-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    color: teal;
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    margin-left: 35px;
 
-
+    line-height: 3rem;
+    white-space: nowrap;
 }
 
-.sidebar {
-    width: 30%;
+.recent-notice-item a {
+    font-size: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    line-height: 2;
+    color: teal;
+    padding-left: 10px;
+    padding: 15px;
 }
 
-.sidebar h3 {
-    font-weight: bold;
-    text-align: center;
-
-    margin-bottom: 2rem;
+.recent-notice-item a:hover {
+    text-decoration: underline;
 }
 
-.sidebar hr {
-    width: 30rem;
-
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.sidebar li {
-    line-height: 4.5rem;
-    font-size: 1.5rem;
+/* ============PAGE NUMBER ============*/
+.page-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .page-numbers {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
-.page-numbers a.active{
+.page-numbers a.active {
     cursor: pointer;
 }
 
 .number {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
 
     padding: 0.5em 1em 0.5em 1em;
@@ -84,23 +132,21 @@
     margin-left: 1rem;
     margin-right: 1rem;
 
-    border: rgb(143, 143, 143) solid;
-    border-radius: 0.25vw;
-    background: #ffffff;
-
-    color: black;
+    border: lightseagreen solid 1px;
+    border-radius: 5px;
+    color: teal;
+    font-weight: 500;
 }
 
 .number:hover {
-    background: #efefef;
-
-    color: black;
+    background: lightseagreen;
+    color: #efefef;
 }
 
 .number.active {
     pointer-events: none;
-    color: white;
-    background: #9c9c9c;
-
-    border: rgb(70, 70, 70) solid;
+    background: lightseagreen;
+    color: #efefef;
+    font-weight: 500;
+    border: lightseagreen solid 1px;
 }
